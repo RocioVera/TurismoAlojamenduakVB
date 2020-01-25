@@ -1,0 +1,13 @@
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Release\UsuAdmin.vbprojAssemblyReference.cache
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Release\UsuAdmin.Aukera.resources
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Release\UsuAdmin.ErabiltzaileakIkusiN.resources
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Release\UsuAdmin.ErabiltzaileKudeaketa.resources
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Release\UsuAdmin.Erreserba.resources
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Release\UsuAdmin.Leiho1_InicioSesion.resources
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Release\UsuAdmin.Resources.resources
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Release\UsuAdmin.OstatuakIkusiN.resources
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Release\UsuAdmin.OstatuKudeaketa.resources
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Release\UsuAdmin.ErabiltzaileUpdate.resources
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Release\UsuAdmin.OstatuUpdate.resources
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Release\UsuAdmin.UsuNormal.resources
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Release\UsuAdmin.vbproj.GenerateResource.cache

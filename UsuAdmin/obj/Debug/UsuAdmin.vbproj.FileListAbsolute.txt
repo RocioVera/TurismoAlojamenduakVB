@@ -1,0 +1,231 @@
+P:\WORKESPACE-JAVA\UsuAdmin\UsuAdmin\bin\Debug\UsuAdmin.exe.config
+P:\WORKESPACE-JAVA\UsuAdmin\UsuAdmin\bin\Debug\UsuAdmin.exe
+P:\WORKESPACE-JAVA\UsuAdmin\UsuAdmin\bin\Debug\UsuAdmin.pdb
+P:\WORKESPACE-JAVA\UsuAdmin\UsuAdmin\bin\Debug\UsuAdmin.xml
+P:\WORKESPACE-JAVA\UsuAdmin\UsuAdmin\obj\Debug\UsuAdmin.vbprojAssemblyReference.cache
+P:\WORKESPACE-JAVA\UsuAdmin\UsuAdmin\obj\Debug\UsuAdmin.InicioSesion.resources
+P:\WORKESPACE-JAVA\UsuAdmin\UsuAdmin\obj\Debug\UsuAdmin.Resources.resources
+P:\WORKESPACE-JAVA\UsuAdmin\UsuAdmin\obj\Debug\UsuAdmin.vbproj.GenerateResource.cache
+P:\WORKESPACE-JAVA\UsuAdmin\UsuAdmin\obj\Debug\UsuAdmin.exe
+P:\WORKESPACE-JAVA\UsuAdmin\UsuAdmin\obj\Debug\UsuAdmin.xml
+P:\WORKESPACE-JAVA\UsuAdmin\UsuAdmin\obj\Debug\UsuAdmin.pdb
+P:\WORKESPACE-JAVA\UsuAdmin\UsuAdmin\bin\Debug\Database1.mdb
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\INTENTO INICIO SESION\UsuAdmin\UsuAdmin\bin\Debug\UsuAdmin.exe.config
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\INTENTO INICIO SESION\UsuAdmin\UsuAdmin\bin\Debug\UsuAdmin.exe
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\INTENTO INICIO SESION\UsuAdmin\UsuAdmin\bin\Debug\UsuAdmin.pdb
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\INTENTO INICIO SESION\UsuAdmin\UsuAdmin\bin\Debug\UsuAdmin.xml
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\INTENTO INICIO SESION\UsuAdmin\UsuAdmin\obj\Debug\UsuAdmin.vbprojAssemblyReference.cache
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\INTENTO INICIO SESION\UsuAdmin\UsuAdmin\obj\Debug\UsuAdmin.Resources.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\INTENTO INICIO SESION\UsuAdmin\UsuAdmin\obj\Debug\UsuAdmin.vbproj.GenerateResource.cache
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\INTENTO INICIO SESION\UsuAdmin\UsuAdmin\obj\Debug\UsuAdmin.exe
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\INTENTO INICIO SESION\UsuAdmin\UsuAdmin\obj\Debug\UsuAdmin.xml
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\INTENTO INICIO SESION\UsuAdmin\UsuAdmin\obj\Debug\UsuAdmin.pdb
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\INTENTO INICIO SESION\UsuAdmin\UsuAdmin\obj\Debug\UsuAdmin.Leiho1_InicioSesion.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\INTENTO INICIO SESION\UsuAdmin\UsuAdmin\bin\Debug\MySql.Data.dll
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\INTENTO INICIO SESION\UsuAdmin\UsuAdmin\bin\Debug\Google.Protobuf.dll
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\INTENTO INICIO SESION\UsuAdmin\UsuAdmin\bin\Debug\MySql.Data.xml
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\INTENTO INICIO SESION\UsuAdmin\UsuAdmin\obj\Debug\UsuAdmin.vbproj.CopyComplete
+P:\2ebal\WORKESPACE-VB\EjerKudeatuErabiltzaileak\UsuAdmin\bin\Debug\UsuAdmin.exe.config
+P:\2ebal\WORKESPACE-VB\EjerKudeatuErabiltzaileak\UsuAdmin\bin\Debug\UsuAdmin.exe
+P:\2ebal\WORKESPACE-VB\EjerKudeatuErabiltzaileak\UsuAdmin\bin\Debug\UsuAdmin.pdb
+P:\2ebal\WORKESPACE-VB\EjerKudeatuErabiltzaileak\UsuAdmin\bin\Debug\UsuAdmin.xml
+P:\2ebal\WORKESPACE-VB\EjerKudeatuErabiltzaileak\UsuAdmin\bin\Debug\Google.Protobuf.dll
+P:\2ebal\WORKESPACE-VB\EjerKudeatuErabiltzaileak\UsuAdmin\bin\Debug\MySql.Data.xml
+P:\2ebal\WORKESPACE-VB\EjerKudeatuErabiltzaileak\UsuAdmin\obj\Debug\UsuAdmin.vbprojAssemblyReference.cache
+P:\2ebal\WORKESPACE-VB\EjerKudeatuErabiltzaileak\UsuAdmin\obj\Debug\UsuAdmin.Leiho1_InicioSesion.resources
+P:\2ebal\WORKESPACE-VB\EjerKudeatuErabiltzaileak\UsuAdmin\obj\Debug\UsuAdmin.Resources.resources
+P:\2ebal\WORKESPACE-VB\EjerKudeatuErabiltzaileak\UsuAdmin\obj\Debug\UsuAdmin.vbproj.GenerateResource.cache
+P:\2ebal\WORKESPACE-VB\EjerKudeatuErabiltzaileak\UsuAdmin\obj\Debug\UsuAdmin.vbproj.CopyComplete
+P:\2ebal\WORKESPACE-VB\EjerKudeatuErabiltzaileak\UsuAdmin\obj\Debug\UsuAdmin.exe
+P:\2ebal\WORKESPACE-VB\EjerKudeatuErabiltzaileak\UsuAdmin\obj\Debug\UsuAdmin.xml
+P:\2ebal\WORKESPACE-VB\EjerKudeatuErabiltzaileak\UsuAdmin\obj\Debug\UsuAdmin.pdb
+P:\2ebal\WORKESPACE-VB\EjerKudeatuErabiltzaileak\UsuAdmin\obj\Debug\UsuAdmin.Form1.resources
+E:\2DAM\ETHAZI 2 EVAL\VISUALBASIC\EjerKudeatuErabiltzaileak\UsuAdmin\bin\Debug\UsuAdmin.exe.config
+E:\2DAM\ETHAZI 2 EVAL\VISUALBASIC\EjerKudeatuErabiltzaileak\UsuAdmin\bin\Debug\UsuAdmin.exe
+E:\2DAM\ETHAZI 2 EVAL\VISUALBASIC\EjerKudeatuErabiltzaileak\UsuAdmin\bin\Debug\UsuAdmin.pdb
+E:\2DAM\ETHAZI 2 EVAL\VISUALBASIC\EjerKudeatuErabiltzaileak\UsuAdmin\bin\Debug\UsuAdmin.xml
+E:\2DAM\ETHAZI 2 EVAL\VISUALBASIC\EjerKudeatuErabiltzaileak\UsuAdmin\bin\Debug\Google.Protobuf.dll
+E:\2DAM\ETHAZI 2 EVAL\VISUALBASIC\EjerKudeatuErabiltzaileak\UsuAdmin\bin\Debug\MySql.Data.xml
+E:\2DAM\ETHAZI 2 EVAL\VISUALBASIC\EjerKudeatuErabiltzaileak\UsuAdmin\obj\Debug\UsuAdmin.vbprojAssemblyReference.cache
+E:\2DAM\ETHAZI 2 EVAL\VISUALBASIC\EjerKudeatuErabiltzaileak\UsuAdmin\obj\Debug\UsuAdmin.Form1.resources
+E:\2DAM\ETHAZI 2 EVAL\VISUALBASIC\EjerKudeatuErabiltzaileak\UsuAdmin\obj\Debug\UsuAdmin.Leiho1_InicioSesion.resources
+E:\2DAM\ETHAZI 2 EVAL\VISUALBASIC\EjerKudeatuErabiltzaileak\UsuAdmin\obj\Debug\UsuAdmin.Resources.resources
+E:\2DAM\ETHAZI 2 EVAL\VISUALBASIC\EjerKudeatuErabiltzaileak\UsuAdmin\obj\Debug\UsuAdmin.vbproj.GenerateResource.cache
+E:\2DAM\ETHAZI 2 EVAL\VISUALBASIC\EjerKudeatuErabiltzaileak\UsuAdmin\obj\Debug\UsuAdmin.vbproj.CopyComplete
+E:\2DAM\ETHAZI 2 EVAL\VISUALBASIC\EjerKudeatuErabiltzaileak\UsuAdmin\obj\Debug\UsuAdmin.exe
+E:\2DAM\ETHAZI 2 EVAL\VISUALBASIC\EjerKudeatuErabiltzaileak\UsuAdmin\obj\Debug\UsuAdmin.xml
+E:\2DAM\ETHAZI 2 EVAL\VISUALBASIC\EjerKudeatuErabiltzaileak\UsuAdmin\obj\Debug\UsuAdmin.pdb
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\INTENTO INICIO SESION\UsuAdmin\UsuAdmin\bin\Debug\BouncyCastle.Crypto.dll
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\INTENTO INICIO SESION\UsuAdmin\UsuAdmin\bin\Debug\Renci.SshNet.dll
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\INTENTO INICIO SESION\UsuAdmin\UsuAdmin\obj\Debug\UsuAdmin.Form1.resources
+E:\2DAM\ETHAZI 2 EVAL\vb final\TurismoAlojamenduakVB-master\UsuAdmin\bin\Debug\UsuAdmin.exe.config
+E:\2DAM\ETHAZI 2 EVAL\vb final\TurismoAlojamenduakVB-master\UsuAdmin\bin\Debug\UsuAdmin.exe
+E:\2DAM\ETHAZI 2 EVAL\vb final\TurismoAlojamenduakVB-master\UsuAdmin\bin\Debug\UsuAdmin.pdb
+E:\2DAM\ETHAZI 2 EVAL\vb final\TurismoAlojamenduakVB-master\UsuAdmin\bin\Debug\UsuAdmin.xml
+E:\2DAM\ETHAZI 2 EVAL\vb final\TurismoAlojamenduakVB-master\UsuAdmin\bin\Debug\Google.Protobuf.dll
+E:\2DAM\ETHAZI 2 EVAL\vb final\TurismoAlojamenduakVB-master\UsuAdmin\bin\Debug\BouncyCastle.Crypto.dll
+E:\2DAM\ETHAZI 2 EVAL\vb final\TurismoAlojamenduakVB-master\UsuAdmin\bin\Debug\Renci.SshNet.dll
+E:\2DAM\ETHAZI 2 EVAL\vb final\TurismoAlojamenduakVB-master\UsuAdmin\bin\Debug\MySql.Data.xml
+E:\2DAM\ETHAZI 2 EVAL\vb final\TurismoAlojamenduakVB-master\UsuAdmin\obj\Debug\UsuAdmin.vbprojAssemblyReference.cache
+E:\2DAM\ETHAZI 2 EVAL\vb final\TurismoAlojamenduakVB-master\UsuAdmin\obj\Debug\UsuAdmin.Form1.resources
+E:\2DAM\ETHAZI 2 EVAL\vb final\TurismoAlojamenduakVB-master\UsuAdmin\obj\Debug\UsuAdmin.Leiho1_InicioSesion.resources
+E:\2DAM\ETHAZI 2 EVAL\vb final\TurismoAlojamenduakVB-master\UsuAdmin\obj\Debug\UsuAdmin.Resources.resources
+E:\2DAM\ETHAZI 2 EVAL\vb final\TurismoAlojamenduakVB-master\UsuAdmin\obj\Debug\UsuAdmin.vbproj.GenerateResource.cache
+E:\2DAM\ETHAZI 2 EVAL\vb final\TurismoAlojamenduakVB-master\UsuAdmin\obj\Debug\UsuAdmin.vbproj.CopyComplete
+E:\2DAM\ETHAZI 2 EVAL\vb final\TurismoAlojamenduakVB-master\UsuAdmin\obj\Debug\UsuAdmin.exe
+E:\2DAM\ETHAZI 2 EVAL\vb final\TurismoAlojamenduakVB-master\UsuAdmin\obj\Debug\UsuAdmin.xml
+E:\2DAM\ETHAZI 2 EVAL\vb final\TurismoAlojamenduakVB-master\UsuAdmin\obj\Debug\UsuAdmin.pdb
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\bin\Debug\UsuAdmin.exe.config
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\bin\Debug\UsuAdmin.exe
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\bin\Debug\UsuAdmin.pdb
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\bin\Debug\UsuAdmin.xml
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Debug\UsuAdmin.Leiho1_InicioSesion.resources
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Debug\UsuAdmin.Resources.resources
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Debug\UsuAdmin.vbproj.GenerateResource.cache
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Debug\UsuAdmin.vbproj.CopyComplete
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Debug\UsuAdmin.exe
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Debug\UsuAdmin.xml
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Debug\UsuAdmin.pdb
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Debug\UsuAdmin.Aukera.resources
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Debug\UsuAdmin.ErabiltzaileKudeaketa.resources
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Debug\UsuAdmin.OstatuKudeaketa.resources
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Debug\UsuAdmin.OstatuakIkusiN.resources
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Debug\UsuAdmin.UsuNormal.resources
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Debug\UsuAdmin.ErabiltzaileakIkusiN.resources
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Debug\UsuAdmin.Erreserba.resources
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Debug\UsuAdmin.ErabiltzaileUpdate.resources
+P:\2ebal\WORKESPACE-VB\asp\UsuAdmin\obj\Debug\UsuAdmin.OstatuUpdate.resources
+P:\2ebal\WORKESPACE-VB\VB\UsuAdmin\obj\Debug\UsuAdmin.vbprojAssemblyReference.cache
+P:\2ebal\WORKESPACE-VB\VB\UsuAdmin\obj\Debug\UsuAdmin.Aukera.resources
+P:\2ebal\WORKESPACE-VB\VB\UsuAdmin\obj\Debug\UsuAdmin.ErabiltzaileakIkusiN.resources
+P:\2ebal\WORKESPACE-VB\VB\UsuAdmin\obj\Debug\UsuAdmin.ErabiltzaileKudeaketa.resources
+P:\2ebal\WORKESPACE-VB\VB\UsuAdmin\obj\Debug\UsuAdmin.Erreserba.resources
+P:\2ebal\WORKESPACE-VB\VB\UsuAdmin\obj\Debug\UsuAdmin.Leiho1_InicioSesion.resources
+P:\2ebal\WORKESPACE-VB\VB\UsuAdmin\obj\Debug\UsuAdmin.Resources.resources
+P:\2ebal\WORKESPACE-VB\VB\UsuAdmin\obj\Debug\UsuAdmin.OstatuakIkusiN.resources
+P:\2ebal\WORKESPACE-VB\VB\UsuAdmin\obj\Debug\UsuAdmin.OstatuKudeaketa.resources
+P:\2ebal\WORKESPACE-VB\VB\UsuAdmin\obj\Debug\UsuAdmin.ErabiltzaileUpdate.resources
+P:\2ebal\WORKESPACE-VB\VB\UsuAdmin\obj\Debug\UsuAdmin.OstatuUpdate.resources
+P:\2ebal\WORKESPACE-VB\VB\UsuAdmin\obj\Debug\UsuAdmin.UsuNormal.resources
+P:\2ebal\WORKESPACE-VB\VB\UsuAdmin\obj\Debug\UsuAdmin.vbproj.GenerateResource.cache
+P:\2ebal\WORKESPACE-VB\VB\UsuAdmin\obj\Debug\UsuAdmin.exe
+P:\2ebal\WORKESPACE-VB\VB\UsuAdmin\obj\Debug\UsuAdmin.xml
+P:\2ebal\WORKESPACE-VB\VB\UsuAdmin\obj\Debug\UsuAdmin.pdb
+P:\2ebal\WORKESPACE-VB\VB\UsuAdmin\bin\Debug\UsuAdmin.exe.config
+P:\2ebal\WORKESPACE-VB\VB\UsuAdmin\bin\Debug\UsuAdmin.exe
+P:\2ebal\WORKESPACE-VB\VB\UsuAdmin\bin\Debug\UsuAdmin.pdb
+P:\2ebal\WORKESPACE-VB\VB\UsuAdmin\bin\Debug\UsuAdmin.xml
+P:\2ebal\WORKESPACE-VB\VB\UsuAdmin\obj\Debug\UsuAdmin.vbproj.CopyComplete
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\CODIGO2.0\UsuAdmin\obj\Debug\UsuAdmin.vbprojAssemblyReference.cache
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\CODIGO2.0\UsuAdmin\obj\Debug\UsuAdmin.Aukera.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\CODIGO2.0\UsuAdmin\obj\Debug\UsuAdmin.ErabiltzaileakIkusiN.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\CODIGO2.0\UsuAdmin\obj\Debug\UsuAdmin.ErabiltzaileKudeaketa.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\CODIGO2.0\UsuAdmin\obj\Debug\UsuAdmin.Erreserba.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\CODIGO2.0\UsuAdmin\obj\Debug\UsuAdmin.Leiho1_InicioSesion.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\CODIGO2.0\UsuAdmin\obj\Debug\UsuAdmin.Resources.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\CODIGO2.0\UsuAdmin\obj\Debug\UsuAdmin.OstatuakIkusiN.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\CODIGO2.0\UsuAdmin\obj\Debug\UsuAdmin.OstatuKudeaketa.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\CODIGO2.0\UsuAdmin\obj\Debug\UsuAdmin.ErabiltzaileUpdate.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\CODIGO2.0\UsuAdmin\obj\Debug\UsuAdmin.OstatuUpdatea.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\CODIGO2.0\UsuAdmin\obj\Debug\UsuAdmin.UsuNormal.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\CODIGO2.0\UsuAdmin\obj\Debug\UsuAdmin.vbproj.GenerateResource.cache
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\CODIGO2.0\UsuAdmin\obj\Debug\UsuAdmin.exe
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\CODIGO2.0\UsuAdmin\obj\Debug\UsuAdmin.xml
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\CODIGO2.0\UsuAdmin\obj\Debug\UsuAdmin.pdb
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\CODIGO2.0\UsuAdmin\bin\Debug\UsuAdmin.exe.config
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\CODIGO2.0\UsuAdmin\bin\Debug\UsuAdmin.exe
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\CODIGO2.0\UsuAdmin\bin\Debug\UsuAdmin.pdb
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\CODIGO2.0\UsuAdmin\bin\Debug\UsuAdmin.xml
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\CODIGO2.0\UsuAdmin\obj\Debug\UsuAdmin.vbproj.CopyComplete
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\CODIGO2.0\UsuAdmin\obj\Debug\UsuAdmin.ErreserbaKudeaketa.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\CODIGO2.0\UsuAdmin\obj\Debug\UsuAdmin.ErreserbaUpdate.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\CODIGO2.0\UsuAdmin\obj\Debug\UsuAdmin.ErabiltzaileInsert.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\bin\Debug\UsuAdmin.exe.config
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\bin\Debug\UsuAdmin.exe
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\bin\Debug\UsuAdmin.pdb
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\bin\Debug\UsuAdmin.xml
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\bin\Debug\MySql.Data.dll
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\bin\Debug\Google.Protobuf.dll
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\bin\Debug\BouncyCastle.Crypto.dll
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\bin\Debug\Renci.SshNet.dll
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\bin\Debug\MySql.Data.xml
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\obj\Debug\UsuAdmin.vbprojAssemblyReference.cache
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\obj\Debug\UsuAdmin.ErabiltzaileakIkusiN.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\obj\Debug\UsuAdmin.Erreserba.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\obj\Debug\UsuAdmin.Leiho1_InicioSesion.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\obj\Debug\UsuAdmin.Resources.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\obj\Debug\UsuAdmin.vbproj.GenerateResource.cache
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\obj\Debug\UsuAdmin.vbproj.CopyComplete
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\obj\Debug\UsuAdmin.exe
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\obj\Debug\UsuAdmin.xml
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\obj\Debug\UsuAdmin.pdb
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\obj\Debug\UsuAdmin.Leiho2_AurkeraAdmin.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\obj\Debug\UsuAdmin.Leiho2_AukeraBezeroNormala.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\obj\Debug\UsuAdmin.Leiho4_ErabiltzaileInsert.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\obj\Debug\UsuAdmin.Leiho3_ErabiltzaileKudeaketa.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\obj\Debug\UsuAdmin.Leiho3_OstatuakIkusiN.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\obj\Debug\UsuAdmin.Leiho4_OstatuInsert.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\obj\Debug\UsuAdmin.Leiho3_OstatuKudeaketa.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\obj\Debug\UsuAdmin.Leiho3_ErreserbaKudeaketa.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\obj\Debug\UsuAdmin.Leiho5_ErreserbaUpdate.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\obj\Debug\UsuAdmin.Leiho5_ErabiltzaileUpdate.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB2\UsuAdmin\obj\Debug\UsuAdmin.Leiho5_OstatuUpdate.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.vbprojAssemblyReference.cache
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho2_AurkeraAdmin.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.ErabiltzaileakIkusiN.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho4_ErabiltzaileInsert.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho3_ErabiltzaileKudeaketa.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Erreserba.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho3_ErreserbaKudeaketa.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho5_ErreserbaUpdate.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho1_InicioSesion.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Resources.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho3_OstatuakIkusiN.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho4_OstatuInsert.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho3_OstatuKudeaketa.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho5_ErabiltzaileUpdate.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho5_OstatuUpdate.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho2_AukeraBezeroNormala.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.vbproj.GenerateResource.cache
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.exe
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.xml
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.pdb
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\UsuAdmin.exe.config
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\UsuAdmin.exe
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\UsuAdmin.pdb
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\UsuAdmin.xml
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\Google.Protobuf.dll
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\Renci.SshNet.dll
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\MySql.Data.xml
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo3.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.vbproj.CopyComplete
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\UsuAdmin.exe.config
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\UsuAdmin.exe
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\UsuAdmin.pdb
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\UsuAdmin.xml
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\MySql.Data.dll
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\Google.Protobuf.dll
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\BouncyCastle.Crypto.dll
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\Renci.SshNet.dll
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\MySql.Data.xml
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.vbprojAssemblyReference.cache
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho2_AurkeraAdmin.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.ErabiltzaileakIkusiN.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho4_ErabiltzaileInsert.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho3_ErabiltzaileKudeaketa.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Erreserba.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho3_ErreserbaKudeaketa.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho5_ErreserbaUpdate.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho1_InicioSesion.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Resources.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho3_OstatuakIkusiN.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho4_OstatuInsert.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho3_OstatuKudeaketa.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho5_ErabiltzaileUpdate.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho5_OstatuUpdate.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho2_AukeraBezeroNormala.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.vbproj.GenerateResource.cache
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.vbproj.CopyComplete
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.exe
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.xml
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.pdb
