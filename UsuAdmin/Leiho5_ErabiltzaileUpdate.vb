@@ -32,8 +32,11 @@ Public Class Leiho5_ErabiltzaileUpdate
         Dim v_izena As String
         Dim v_abizena As String
         Dim v_baimena As Integer = 2
-        If cbBaimena.SelectedIndex = 1 Then
+        Dim baimena = cbBaimena.Text
+        If baimena = "Administratzailea" Then
             v_baimena = 0
+        ElseIf baimena = "Gonbidatua" Then
+            v_baimena = 1
         End If
         Dim v_email As String
         Dim v_telefono As Integer
@@ -43,7 +46,6 @@ Public Class Leiho5_ErabiltzaileUpdate
         Dim v_NAN_E As String
         Dim v_izena_E As String
         Dim v_abizena_E As String
-        Dim v_baimena_E As Integer
         Dim v_email_E As String
         Dim v_telefono_E As String
         Dim cont As Integer = 0
@@ -109,8 +111,8 @@ Public Class Leiho5_ErabiltzaileUpdate
         If cont = 0 Then
             Try
                 cnn1 = New MySqlConnection(direccion)
-                Dim SQL2 As New MySqlCommand("UPDATE erabiltzaileak set ERABIL_IZENA = '" & v_izena_E & "' , ABIZENAK = '" & v_abizena_E & " ' , BAIMENA =  " & v_baimena_E & " , ERABIL_EMAIL = '" & v_email_E & "' , ERABIL_TELEFONO = '" & v_telefono_E & " ' WHERE NAN = '" & v_NAN_E & "'", cnn1)
-                ' Dim SQL2 As New MySqlCommand("UPDATE erabiltzaileak set ERABIL_IZENA = '" & v_izena & "' , ABIZENAK = '" & v_abizena & " ' , BAIMENA =  " & v_baimena & " , ERABIL_EMAIL = '" & v_email & "' , ERABIL_TELEFONO = " & v_telefono & "  WHERE NAN = " & v_NAN, cnn1)
+                Dim SQL As String = "UPDATE erabiltzaileak set ERABIL_IZENA = '" & v_izena_E & "' , ABIZENAK = '" & v_abizena_E & "' , BAIMENA = " & v_baimena & ", ERABIL_EMAIL = '" & v_email_E & "', ERABIL_TELEFONO = '" & v_telefono_E & "' WHERE NAN = '" & v_NAN_E & "'"
+                Dim SQL2 As New MySqlCommand(SQL, cnn1)
                 'importante para la conexion y ejecutar las sentencias sql
                 komando.Connection = cnn1
                 cnn1.Open()
@@ -158,4 +160,7 @@ Public Class Leiho5_ErabiltzaileUpdate
         End Try
     End Function
 
+    Private Sub cbBaimena_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbBaimena.SelectedIndexChanged
+
+    End Sub
 End Class

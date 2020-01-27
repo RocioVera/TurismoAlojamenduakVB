@@ -17,6 +17,7 @@ Public Class Leiho3_OstatuKudeaketa
 
         Me.ListView1.Anchor = AnchorStyles.Bottom + AnchorStyles.Left + AnchorStyles.Right + AnchorStyles.Top
         TaulaAtera() ' llamamos al metodo para cargar los datos
+        ListView1.BackColor = ColorTranslator.FromHtml("#FCFEFE")
 
     End Sub
 
@@ -77,9 +78,7 @@ Public Class Leiho3_OstatuKudeaketa
                 'ListView1.Items(z).SubItems.Add(dr.Item(16)) 'zutabe bat gehitzen dut- SubItems
 
                 If z Mod 2 = 0 Then
-
-                    ListView1.Items(z).BackColor = Color.DarkGray
-
+                    ListView1.Items(z).BackColor = ColorTranslator.FromHtml("#B7D7EE")
                 End If
                 z += 1
             End While

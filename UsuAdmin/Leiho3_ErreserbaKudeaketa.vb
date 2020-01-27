@@ -11,6 +11,18 @@ Public Class Leiho3_ErreserbaKudeaketa
     Dim pass As String = "encriptado"
     Dim hautatutakoErreserba As Erreserbak
 
+    Private Sub ErreserbaKudeaketa_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.ListView1.View = View.Details
+        Me.ListView1.GridLines = True
+
+
+        Me.ListView1.Anchor = AnchorStyles.Bottom + AnchorStyles.Left + AnchorStyles.Right + AnchorStyles.Top
+        TaulaAtera() ' llamamos al metodo para cargar los datos
+        ListView1.BackColor = ColorTranslator.FromHtml("#FCFEFE")
+
+
+    End Sub
+
     Private Sub TaulaAtera()
         Try
             cnn1 = New MySqlConnection(direccion)
@@ -44,7 +56,7 @@ Public Class Leiho3_ErreserbaKudeaketa
                 ListView1.Items(z).SubItems.Add(AES_Decrypt(dr.Item(6), pass)) 'zutabe bat gehitzen dut- SubItems
 
                 If z Mod 2 = 0 Then
-                    ListView1.Items(z).BackColor = Color.Gray
+                    ListView1.Items(z).BackColor = ColorTranslator.FromHtml("#B7D7EE")
                 End If
                 z += 1
             End While
@@ -74,14 +86,6 @@ Public Class Leiho3_ErreserbaKudeaketa
         End Try
 
     End Function
-
-    Private Sub ErreserbaKudeaketa_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.ListView1.View = View.Details
-        Me.ListView1.GridLines = True
-
-        Me.ListView1.Anchor = AnchorStyles.Bottom + AnchorStyles.Left + AnchorStyles.Right + AnchorStyles.Top
-        TaulaAtera() ' llamamos al metodo para cargar los datos
-    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnEzabatu.Click
         Try

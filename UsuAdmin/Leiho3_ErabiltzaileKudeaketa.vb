@@ -14,7 +14,6 @@ Public Class Leiho3_ErabiltzaileKudeaketa
 
     'importante 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Me.BackColor = Color.CadetBlue
         Me.btnAtzera.BackColor = Color.OldLace
         Me.btnEzabatu.BackColor = Color.OldLace
         Me.btnAldatu.BackColor = Color.OldLace
@@ -24,6 +23,10 @@ Public Class Leiho3_ErabiltzaileKudeaketa
 
         Me.ListView1.Anchor = AnchorStyles.Bottom + AnchorStyles.Left + AnchorStyles.Right + AnchorStyles.Top
         TaulaAtera() ' llamamos al metodo para cargar los datos
+        ListView1.BackColor = ColorTranslator.FromHtml("#FCFEFE")
+        'ListView1.BackColor = Color.White
+
+
     End Sub
 
     'metodo para cargar los datos en el textview 
@@ -57,7 +60,7 @@ Public Class Leiho3_ErabiltzaileKudeaketa
                 ListView1.Items(z).SubItems.Add(AES_Decrypt(dr.Item(5), pass)) 'zutabe bat gehitzen dut- SubItems
 
                 If z Mod 2 = 0 Then
-                    ListView1.Items(z).BackColor = Color.Gray
+                    ListView1.Items(z).BackColor = ColorTranslator.FromHtml("#B7D7EE")
                 End If
                 z += 1
             End While
