@@ -229,3 +229,32 @@ G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuA
 G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.exe
 G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.xml
 G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.pdb
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\UsuAdmin.exe.config
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\UsuAdmin.exe
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\UsuAdmin.pdb
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\UsuAdmin.xml
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\Google.Protobuf.dll
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\Renci.SshNet.dll
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\MySql.Data.xml
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.vbprojAssemblyReference.cache
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho2_AurkeraAdmin.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.ErabiltzaileakIkusiN.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho4_ErabiltzaileInsert.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho3_ErabiltzaileKudeaketa.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Erreserba.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho3_ErreserbaKudeaketa.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho5_ErreserbaUpdate.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho1_InicioSesion.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Resources.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho3_OstatuakIkusiN.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho4_OstatuInsert.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho3_OstatuKudeaketa.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho5_ErabiltzaileUpdate.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho5_OstatuUpdate.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho2_AukeraBezeroNormala.resources
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.vbproj.GenerateResource.cache
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.vbproj.CopyComplete
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.exe
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.xml
+C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.pdb

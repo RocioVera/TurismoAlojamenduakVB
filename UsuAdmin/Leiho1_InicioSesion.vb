@@ -109,4 +109,8 @@ Public Class Leiho1_InicioSesion
     Private Sub Leiho1_InicioSesion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub btnHasiSaioa_KeyPress(sender As Object, e As KeyPressEventArgs) Handles btnHasiSaioa.KeyPress
+
+    End Sub
 End Class

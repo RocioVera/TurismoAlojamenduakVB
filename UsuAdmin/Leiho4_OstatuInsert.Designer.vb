@@ -132,6 +132,7 @@ Partial Class Leiho4_OstatuInsert
         'cbHerria
         '
         Me.cbHerria.DisplayMember = "67"
+        Me.cbHerria.Enabled = False
         Me.cbHerria.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.cbHerria.FormattingEnabled = True
         Me.cbHerria.Location = New System.Drawing.Point(162, 124)
@@ -154,7 +155,7 @@ Partial Class Leiho4_OstatuInsert
         Me.cbProbintzia.DisplayMember = "67"
         Me.cbProbintzia.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.cbProbintzia.FormattingEnabled = True
-        Me.cbProbintzia.Items.AddRange(New Object() {"Probintzia", "Araba", "Bizkaia", "Gipuzkoa"})
+        Me.cbProbintzia.Items.AddRange(New Object() {"Araba", "Bizkaia", "Gipuzkoa"})
         Me.cbProbintzia.Location = New System.Drawing.Point(11, 124)
         Me.cbProbintzia.Name = "cbProbintzia"
         Me.cbProbintzia.Size = New System.Drawing.Size(145, 23)
@@ -172,6 +173,7 @@ Partial Class Leiho4_OstatuInsert
         '
         'cbPostaKodea
         '
+        Me.cbPostaKodea.Enabled = False
         Me.cbPostaKodea.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.cbPostaKodea.FormattingEnabled = True
         Me.cbPostaKodea.Location = New System.Drawing.Point(463, 124)
@@ -182,6 +184,7 @@ Partial Class Leiho4_OstatuInsert
         'cbHerriKodea
         '
         Me.cbHerriKodea.DisplayMember = "67"
+        Me.cbHerriKodea.Enabled = False
         Me.cbHerriKodea.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.cbHerriKodea.FormattingEnabled = True
         Me.cbHerriKodea.Location = New System.Drawing.Point(312, 124)

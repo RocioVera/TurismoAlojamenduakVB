@@ -281,7 +281,7 @@ Public Class Leiho5_OstatuUpdate
     End Sub
 
     Private Sub cbHerriKodea_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbHerriKodea.SelectedIndexChanged
-        If cbHerriKodea.Text = "Herri kodeak" Then
+        If cbHerria.Text = "Herri kodeak" Then
             PostaKodeakGuztiakKargatu()
         Else
             Dim sql = "SELECT DISTINCT(posta_kodea) FROM posta_kodeak WHERE herri_kodea = '" & cbHerriKodea.SelectedValue & "' ORDER BY posta_kodea ASC"
@@ -294,4 +294,6 @@ Public Class Leiho5_OstatuUpdate
         Dim f1 As New Leiho3_OstatuKudeaketa
         f1.Show()
     End Sub
+
+
 End Class
