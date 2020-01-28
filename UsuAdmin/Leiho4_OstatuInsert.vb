@@ -50,13 +50,13 @@ Public Class Leiho4_OstatuInsert
     Private Sub cbHerria_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbHerria.SelectedIndexChanged
         Dim sql As String
 
-        If cbHerria.Text = "Herriak" And cbProbintzia.Text = "Probintzia" Then
+        If cbHerria.Text = "" And cbProbintzia.Text = "" Then
             HerriKodeGuztiakKargatu()
         Else
-            If cbHerria.Text <> "Herriak" Then
+            If cbHerria.Text <> "" Then
                 sql = "SELECT DISTINCT(herri_kodea) FROM posta_kodeak WHERE upper(herri_izena) LIKE upper( '" & cbHerria.Text & "') "
 
-                If cbProbintzia.Text <> "Probintzia" Then
+                If cbProbintzia.Text <> "" Then
                     sql += "AND upper(PROBINTZIA) LIKE '" & cbProbintzia.Text.ToUpper & "' "
                 End If
 
@@ -65,7 +65,7 @@ Public Class Leiho4_OstatuInsert
                 sql = "SELECT DISTINCT(posta_kodea) FROM posta_kodeak WHERE upper(PROBINTZIA) LIKE '" & cbProbintzia.Text.ToUpper & "' ORDER BY posta_kodea ASC"
                 PostaKodeakDropDownGehitu(sql)
             Else
-                If cbProbintzia.Text <> "Probintzia" Then
+                If cbProbintzia.Text <> "" Then
                     sql += "SELECT DISTINCT(herri_kodea) FROM posta_kodeak WHERE upper(PROBINTZIA) LIKE '" & cbProbintzia.Text.ToUpper & "' "
                 Else
                     sql += "SELECT DISTINCT(herri_kodea) FROM posta_kodeak "
@@ -75,10 +75,13 @@ Public Class Leiho4_OstatuInsert
                 HerriKodeakDropDownGehitu(sql)
                 sql = "SELECT DISTINCT(posta_kodea) FROM posta_kodeak WHERE upper(PROBINTZIA) LIKE '" & cbProbintzia.Text.ToUpper & "' ORDER BY posta_kodea ASC"
                 PostaKodeakDropDownGehitu(sql)
-
             End If
 
         End If
+        cbHerriKodea.Text = ""
+        cbPostaKodea.Text = ""
+        cbHerriKodea.Enabled = True
+        cbPostaKodea.Enabled = False
     End Sub
 
     Private Sub PostaKodeakGuztiakKargatu()
@@ -96,7 +99,6 @@ Public Class Leiho4_OstatuInsert
         Try
             cbHerriKodea.Items.Clear()
             'defektuzko balorea gehitzen da
-            cbHerriKodea.Items.Add("Herri kodeak")
             Dim das1 As New DataSet
             cnn1 = New MySqlConnection(server)
             cnn1.Open()
@@ -126,7 +128,6 @@ Public Class Leiho4_OstatuInsert
         Try
             cbPostaKodea.Items.Clear()
             'defektuzko balorea gehitzen da
-            cbPostaKodea.Items.Add("Posta kodeak")
             Dim das1 As New DataSet
             cnn1 = New MySqlConnection(server)
             cnn1.Open()
@@ -159,6 +160,8 @@ Public Class Leiho4_OstatuInsert
             Dim sql = "SELECT DISTINCT(posta_kodea) FROM posta_kodeak WHERE herri_kodea = '" & cbHerriKodea.SelectedValue & "' ORDER BY posta_kodea ASC"
             PostaKodeakDropDownGehitu(sql)
         End If
+        cbPostaKodea.Text = ""
+        cbPostaKodea.Enabled = True
     End Sub
 
     Private Sub cbProbintzia_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbProbintzia.SelectedIndexChanged
@@ -176,13 +179,18 @@ Public Class Leiho4_OstatuInsert
             HerriKodeGuztiakKargatu()
             PostaKodeakGuztiakKargatu()
         End If
+        cbHerria.Text = ""
+        cbHerriKodea.Text = ""
+        cbPostaKodea.Text = ""
+        cbHerria.Enabled = True
+        cbHerriKodea.Enabled = False
+        cbPostaKodea.Enabled = False
     End Sub
 
     Private Sub HerriDropDownGehitu(sql As String)
         Try
             cbHerria.Items.Clear()
             'defektuzko balorea gehitzen da
-            cbHerria.Items.Add("Herriak")
             Dim das1 As New DataSet
             cnn1 = New MySqlConnection(server)
             cnn1.Open()
@@ -209,4 +217,10 @@ Public Class Leiho4_OstatuInsert
         sql = "SELECT DISTINCT(herri_izena) FROM posta_kodeak ORDER BY herri_izena ASC"
         HerriDropDownGehitu(sql)
     End Sub
+
+    Private Sub KeyUp(sender As Object, e As KeyEventArgs) Handles cbProbintzia.KeyUp, cbPostaKodea.KeyUp, cbHerriKodea.KeyUp, cbHerria.KeyUp
+        cbProbintzia.Text = ""
+    End Sub
+
+
 End Class

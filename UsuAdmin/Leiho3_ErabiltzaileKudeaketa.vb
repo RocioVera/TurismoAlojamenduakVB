@@ -74,9 +74,9 @@ Public Class Leiho3_ErabiltzaileKudeaketa
 
     'delete en el boton 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnEzabatu.Click
-        Dim nan = ListView1.SelectedItems(0).SubItems(0).Text
-        Dim nan_E = AES_Encrypt(nan, pass)
         Try
+            Dim nan = ListView1.SelectedItems(0).SubItems(0).Text
+            Dim nan_E = AES_Encrypt(nan, pass)
             cnn1 = New MySqlConnection(direccion)
             Dim SQL2 As New MySqlCommand("DELETE FROM erabiltzaileak WHERE NAN = '" & nan_E & "'", cnn1)
             'importante para la conexion y ejecutar las sentencias sql
