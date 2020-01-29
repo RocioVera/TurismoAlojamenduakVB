@@ -107,7 +107,16 @@ Public Class Leiho3_ErreserbaKudeaketa
             cnn1.Close()
             TaulaAtera()
         Catch ex As Exception
+            errorea()
         End Try
+    End Sub
+
+    Private Sub errorea()
+        If lblErrorea.Visible = True Then
+            lblErrorea.BackColor = Color.Red
+        Else
+            lblErrorea.Visible = True
+        End If
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnAtzera.Click
@@ -133,7 +142,7 @@ Public Class Leiho3_ErreserbaKudeaketa
             up.Show()
             Me.Hide()
         Catch ex As Exception
-            MsgBox("Hautatu bat!")
+            errorea()
         End Try
     End Sub
 

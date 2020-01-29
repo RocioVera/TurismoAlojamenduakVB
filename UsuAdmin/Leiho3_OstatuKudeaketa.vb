@@ -98,8 +98,9 @@ Public Class Leiho3_OstatuKudeaketa
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnEzabatu.Click
-        Dim id = ListView1.SelectedItems(0).SubItems(0).Text
         Try
+            Dim id = ListView1.SelectedItems(0).SubItems(0).Text
+
             cnn1 = New MySqlConnection(direccion)
             Dim SQL2 As New MySqlCommand("DELETE FROM ostatuak  WHERE ID_SIGNATURA = '" & id & "'", cnn1)
 
@@ -114,6 +115,7 @@ Public Class Leiho3_OstatuKudeaketa
             cnn1.Close()
             TaulaAtera()
         Catch ex As Exception
+            errorea()
         End Try
     End Sub
 
@@ -121,6 +123,13 @@ Public Class Leiho3_OstatuKudeaketa
         aldatuPantaila()
     End Sub
 
+    Private Sub errorea()
+        If lblErrorea.Visible = True Then
+            lblErrorea.BackColor = Color.Red
+        Else
+            lblErrorea.Visible = True
+        End If
+    End Sub
 
     Private Sub aldatuPantaila()
         Try
@@ -145,7 +154,7 @@ Public Class Leiho3_OstatuKudeaketa
             up.Show()
             Me.Hide()
         Catch ex As Exception
-            MsgBox("Hautatu bat!")
+            errorea()
         End Try
     End Sub
 
@@ -160,7 +169,11 @@ Public Class Leiho3_OstatuKudeaketa
         oi.Show()
     End Sub
 
-    Private Sub ListView1_DoubleClick(sender As Object, e As EventArgs) Handles ListView1.DoubleClick
+    Private Sub ListView1_DoubleClick(sender As Object, e As EventArgs)
+        aldatuPantaila()
+    End Sub
+
+    Private Sub ListView1_DoubleClick_1(sender As Object, e As EventArgs) Handles ListView1.DoubleClick
         aldatuPantaila()
     End Sub
 End Class

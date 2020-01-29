@@ -125,6 +125,7 @@ Partial Class Leiho4_OstatuInsert
         '
         Me.signatura.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.signatura.Location = New System.Drawing.Point(177, 16)
+        Me.signatura.MaxLength = 10
         Me.signatura.Name = "signatura"
         Me.signatura.Size = New System.Drawing.Size(130, 21)
         Me.signatura.TabIndex = 84
@@ -196,6 +197,7 @@ Partial Class Leiho4_OstatuInsert
         '
         Me.zipurl.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.zipurl.Location = New System.Drawing.Point(124, 394)
+        Me.zipurl.MaxLength = 1500
         Me.zipurl.Name = "zipurl"
         Me.zipurl.Size = New System.Drawing.Size(483, 21)
         Me.zipurl.TabIndex = 76
@@ -204,6 +206,7 @@ Partial Class Leiho4_OstatuInsert
         '
         Me.adiskidetsuurl.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.adiskidetsuurl.Location = New System.Drawing.Point(124, 363)
+        Me.adiskidetsuurl.MaxLength = 1500
         Me.adiskidetsuurl.Name = "adiskidetsuurl"
         Me.adiskidetsuurl.Size = New System.Drawing.Size(483, 21)
         Me.adiskidetsuurl.TabIndex = 75
@@ -212,6 +215,7 @@ Partial Class Leiho4_OstatuInsert
         '
         Me.weburl.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.weburl.Location = New System.Drawing.Point(124, 332)
+        Me.weburl.MaxLength = 1500
         Me.weburl.Name = "weburl"
         Me.weburl.Size = New System.Drawing.Size(483, 21)
         Me.weburl.TabIndex = 74
@@ -314,6 +318,7 @@ Partial Class Leiho4_OstatuInsert
         '
         Me.deskribapena.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.deskribapena.Location = New System.Drawing.Point(11, 179)
+        Me.deskribapena.MaxLength = 2000
         Me.deskribapena.Name = "deskribapena"
         Me.deskribapena.Size = New System.Drawing.Size(596, 111)
         Me.deskribapena.TabIndex = 63
@@ -343,6 +348,7 @@ Partial Class Leiho4_OstatuInsert
         '
         Me.marka.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.marka.Location = New System.Drawing.Point(395, 72)
+        Me.marka.MaxLength = 500
         Me.marka.Name = "marka"
         Me.marka.Size = New System.Drawing.Size(100, 21)
         Me.marka.TabIndex = 60
@@ -351,6 +357,7 @@ Partial Class Leiho4_OstatuInsert
         '
         Me.mota.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.mota.Location = New System.Drawing.Point(507, 72)
+        Me.mota.MaxLength = 25
         Me.mota.Name = "mota"
         Me.mota.Size = New System.Drawing.Size(100, 21)
         Me.mota.TabIndex = 59
@@ -379,6 +386,7 @@ Partial Class Leiho4_OstatuInsert
         '
         Me.telefonoa.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.telefonoa.Location = New System.Drawing.Point(278, 72)
+        Me.telefonoa.MaxLength = 25
         Me.telefonoa.Name = "telefonoa"
         Me.telefonoa.Size = New System.Drawing.Size(100, 21)
         Me.telefonoa.TabIndex = 56
@@ -387,6 +395,7 @@ Partial Class Leiho4_OstatuInsert
         '
         Me.email.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.email.Location = New System.Drawing.Point(157, 72)
+        Me.email.MaxLength = 100
         Me.email.Name = "email"
         Me.email.Size = New System.Drawing.Size(100, 21)
         Me.email.TabIndex = 55
@@ -425,6 +434,7 @@ Partial Class Leiho4_OstatuInsert
         '
         Me.helbidea.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.helbidea.Location = New System.Drawing.Point(21, 72)
+        Me.helbidea.MaxLength = 200
         Me.helbidea.Name = "helbidea"
         Me.helbidea.Size = New System.Drawing.Size(100, 21)
         Me.helbidea.TabIndex = 51
@@ -433,6 +443,7 @@ Partial Class Leiho4_OstatuInsert
         '
         Me.izena.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.izena.Location = New System.Drawing.Point(395, 16)
+        Me.izena.MaxLength = 50
         Me.izena.Name = "izena"
         Me.izena.Size = New System.Drawing.Size(130, 21)
         Me.izena.TabIndex = 50

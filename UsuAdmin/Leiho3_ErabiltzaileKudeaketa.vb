@@ -91,10 +91,15 @@ Public Class Leiho3_ErabiltzaileKudeaketa
 
             TaulaAtera()
         Catch ex As Exception
+            errorea()
         End Try
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnAldatu.Click
+        bestePantaila()
+    End Sub
+
+    Private Sub bestePantaila()
         Try
             hautatutakoBezeroa = New Bezeroa(ListView1.SelectedItems(0).SubItems(0).Text, ListView1.SelectedItems(0).SubItems(1).Text, ListView1.SelectedItems(0).SubItems(2).Text, ListView1.SelectedItems(0).SubItems(3).Text, ListView1.SelectedItems(0).SubItems(4).Text, ListView1.SelectedItems(0).SubItems(5).Text)
 
@@ -103,9 +108,16 @@ Public Class Leiho3_ErabiltzaileKudeaketa
             up.Show()
             Me.Hide()
         Catch ex As Exception
-            MsgBox("Hautatu bat!")
+            errorea()
         End Try
+    End Sub
 
+    Private Sub errorea()
+        If lblErrorea.Visible = True Then
+            lblErrorea.BackColor = Color.Red
+        Else
+            lblErrorea.Visible = True
+        End If
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnAtzera.Click
@@ -113,12 +125,6 @@ Public Class Leiho3_ErabiltzaileKudeaketa
         Dim f1 As New Leiho2_AurkeraAdmin
         f1.Show()
     End Sub
-
-    'para saber cuantos hay seleccionados
-    'If ListView1.SelectedItems.Count > 0 Then
-    'Dim attendanceid As String = ListView1.SelectedItems(0).SubItems(5).Text
-    ''....
-    'End If
 
     Public Function AES_Decrypt(ByVal input As String, ByVal pass As String) As String
         Dim AES As New System.Security.Cryptography.RijndaelManaged
@@ -145,7 +151,7 @@ Public Class Leiho3_ErabiltzaileKudeaketa
         ei.Show()
     End Sub
 
-    Private Sub ListView1_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles ListView1.MouseDoubleClick
+    Private Sub ListView1_MouseDoubleClick(sender As Object, e As MouseEventArgs)
         Try
             hautatutakoBezeroa = New Bezeroa(ListView1.SelectedItems(0).SubItems(0).Text, ListView1.SelectedItems(0).SubItems(1).Text, ListView1.SelectedItems(0).SubItems(2).Text, ListView1.SelectedItems(0).SubItems(3).Text, ListView1.SelectedItems(0).SubItems(4).Text, ListView1.SelectedItems(0).SubItems(5).Text)
 
@@ -179,4 +185,7 @@ Public Class Leiho3_ErabiltzaileKudeaketa
         End Try
     End Function
 
+    Private Sub ListView1_DoubleClick(sender As Object, e As EventArgs) Handles ListView1.DoubleClick
+        bestePantaila()
+    End Sub
 End Class

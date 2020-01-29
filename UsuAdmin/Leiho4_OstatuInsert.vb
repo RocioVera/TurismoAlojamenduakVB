@@ -8,11 +8,8 @@ Public Class Leiho4_OstatuInsert
     Dim server As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
     Dim v_signatura As String
     Private Sub Leiho4_OstatuInsert_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' v_signatura recoge
         HerriKodeGuztiakKargatu()
         PostaKodeakGuztiakKargatu()
-
-
     End Sub
 
     Private Sub btnGehitu_Click(sender As Object, e As EventArgs) Handles btnGehitu.Click
@@ -24,7 +21,7 @@ Public Class Leiho4_OstatuInsert
             sql += signatura.Text & "', '" & izena.Text.ToUpper & "', '" & deskribapena.Text.ToUpper & "', '" & helbidea.Text.ToUpper & "', '"
             sql += marka.Text.ToUpper & "', '" & email.Text & "', '" & telefonoa.Text & "', " & pertsonatot.Value.ToString & ", '" & latitudea.Text & "', '"
             sql += longitudea.Text & "', '" & mota.Text.ToUpper & "', '" & weburl.Text & "', '" & adiskidetsuurl.Text & "', '" & zipurl.Text
-            sql += "', " & cbPostaKodea.SelectedValue & ", '" & cbHerriKodea.SelectedValue & "')"
+            sql += "', " & cbPostaKodea.Text & ", '" & cbHerriKodea.Text & "')"
 
             Dim command As New MySqlCommand(sql, cnn1)
 
@@ -157,7 +154,7 @@ Public Class Leiho4_OstatuInsert
         If cbHerria.Text = "Herri kodeak" Then
             PostaKodeakGuztiakKargatu()
         Else
-            Dim sql = "SELECT DISTINCT(posta_kodea) FROM posta_kodeak WHERE herri_kodea = '" & cbHerriKodea.SelectedValue & "' ORDER BY posta_kodea ASC"
+            Dim sql = "SELECT DISTINCT(posta_kodea) FROM posta_kodeak WHERE herri_kodea = '" & cbHerriKodea.Text & "' ORDER BY posta_kodea ASC"
             PostaKodeakDropDownGehitu(sql)
         End If
         cbPostaKodea.Text = ""

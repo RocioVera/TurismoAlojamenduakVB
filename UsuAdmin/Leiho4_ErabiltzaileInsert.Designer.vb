@@ -121,7 +121,9 @@ Partial Class Leiho4_ErabiltzaileInsert
         '
         Me.txtPass.Font = New System.Drawing.Font("Times New Roman", 12.0!)
         Me.txtPass.Location = New System.Drawing.Point(106, 143)
+        Me.txtPass.MaxLength = 50
         Me.txtPass.Name = "txtPass"
+        Me.txtPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPass.Size = New System.Drawing.Size(151, 26)
         Me.txtPass.TabIndex = 13
         '
@@ -149,6 +151,7 @@ Partial Class Leiho4_ErabiltzaileInsert
         '
         Me.txtTlf.Font = New System.Drawing.Font("Times New Roman", 12.0!)
         Me.txtTlf.Location = New System.Drawing.Point(106, 281)
+        Me.txtTlf.MaxLength = 9
         Me.txtTlf.Name = "txtTlf"
         Me.txtTlf.Size = New System.Drawing.Size(151, 26)
         Me.txtTlf.TabIndex = 11
@@ -167,6 +170,7 @@ Partial Class Leiho4_ErabiltzaileInsert
         '
         Me.txtIzena.Font = New System.Drawing.Font("Times New Roman", 12.0!)
         Me.txtIzena.Location = New System.Drawing.Point(106, 50)
+        Me.txtIzena.MaxLength = 50
         Me.txtIzena.Name = "txtIzena"
         Me.txtIzena.Size = New System.Drawing.Size(151, 26)
         Me.txtIzena.TabIndex = 10
@@ -185,6 +189,7 @@ Partial Class Leiho4_ErabiltzaileInsert
         '
         Me.txtAbizena.Font = New System.Drawing.Font("Times New Roman", 12.0!)
         Me.txtAbizena.Location = New System.Drawing.Point(106, 97)
+        Me.txtAbizena.MaxLength = 50
         Me.txtAbizena.Name = "txtAbizena"
         Me.txtAbizena.Size = New System.Drawing.Size(151, 26)
         Me.txtAbizena.TabIndex = 9
@@ -213,6 +218,7 @@ Partial Class Leiho4_ErabiltzaileInsert
         '
         Me.txtEmail.Font = New System.Drawing.Font("Times New Roman", 12.0!)
         Me.txtEmail.Location = New System.Drawing.Point(106, 232)
+        Me.txtEmail.MaxLength = 50
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(151, 26)
         Me.txtEmail.TabIndex = 7

@@ -194,6 +194,7 @@ Partial Class Leiho5_OstatuUpdate
         '
         Me.zipurl.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.zipurl.Location = New System.Drawing.Point(123, 412)
+        Me.zipurl.MaxLength = 1500
         Me.zipurl.Name = "zipurl"
         Me.zipurl.Size = New System.Drawing.Size(483, 21)
         Me.zipurl.TabIndex = 76
@@ -202,6 +203,7 @@ Partial Class Leiho5_OstatuUpdate
         '
         Me.adiskidetsuurl.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.adiskidetsuurl.Location = New System.Drawing.Point(123, 381)
+        Me.adiskidetsuurl.MaxLength = 1500
         Me.adiskidetsuurl.Name = "adiskidetsuurl"
         Me.adiskidetsuurl.Size = New System.Drawing.Size(483, 21)
         Me.adiskidetsuurl.TabIndex = 75
@@ -210,6 +212,7 @@ Partial Class Leiho5_OstatuUpdate
         '
         Me.weburl.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.weburl.Location = New System.Drawing.Point(123, 350)
+        Me.weburl.MaxLength = 1500
         Me.weburl.Name = "weburl"
         Me.weburl.Size = New System.Drawing.Size(483, 21)
         Me.weburl.TabIndex = 74
@@ -312,6 +315,7 @@ Partial Class Leiho5_OstatuUpdate
         '
         Me.deskribapena.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.deskribapena.Location = New System.Drawing.Point(10, 197)
+        Me.deskribapena.MaxLength = 2000
         Me.deskribapena.Name = "deskribapena"
         Me.deskribapena.Size = New System.Drawing.Size(596, 111)
         Me.deskribapena.TabIndex = 63
@@ -341,6 +345,7 @@ Partial Class Leiho5_OstatuUpdate
         '
         Me.marka.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.marka.Location = New System.Drawing.Point(394, 90)
+        Me.marka.MaxLength = 500
         Me.marka.Name = "marka"
         Me.marka.Size = New System.Drawing.Size(100, 21)
         Me.marka.TabIndex = 60
@@ -349,6 +354,7 @@ Partial Class Leiho5_OstatuUpdate
         '
         Me.mota.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.mota.Location = New System.Drawing.Point(506, 90)
+        Me.mota.MaxLength = 25
         Me.mota.Name = "mota"
         Me.mota.Size = New System.Drawing.Size(100, 21)
         Me.mota.TabIndex = 59
@@ -377,6 +383,7 @@ Partial Class Leiho5_OstatuUpdate
         '
         Me.telefonoa.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.telefonoa.Location = New System.Drawing.Point(277, 90)
+        Me.telefonoa.MaxLength = 25
         Me.telefonoa.Name = "telefonoa"
         Me.telefonoa.Size = New System.Drawing.Size(100, 21)
         Me.telefonoa.TabIndex = 56
@@ -385,6 +392,7 @@ Partial Class Leiho5_OstatuUpdate
         '
         Me.email.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.email.Location = New System.Drawing.Point(156, 90)
+        Me.email.MaxLength = 100
         Me.email.Name = "email"
         Me.email.Size = New System.Drawing.Size(100, 21)
         Me.email.TabIndex = 55
@@ -423,6 +431,7 @@ Partial Class Leiho5_OstatuUpdate
         '
         Me.helbidea.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.helbidea.Location = New System.Drawing.Point(20, 90)
+        Me.helbidea.MaxLength = 200
         Me.helbidea.Name = "helbidea"
         Me.helbidea.Size = New System.Drawing.Size(100, 21)
         Me.helbidea.TabIndex = 51

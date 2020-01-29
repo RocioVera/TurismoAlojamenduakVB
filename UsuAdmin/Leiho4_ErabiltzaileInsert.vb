@@ -4,6 +4,9 @@ Public Class Leiho4_ErabiltzaileInsert
     Dim cnn1 As MySqlConnection
     Dim direccion As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
 
+    Private Sub Leiho4_ErabiltzaileInsert_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
+    End Sub
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
         Dim ek As New Leiho3_ErabiltzaileKudeaketa
@@ -64,4 +67,5 @@ Public Class Leiho4_ErabiltzaileInsert
     Private Sub Leiho4_ErabiltzaileInsert_Load(sender As Object, e As EventArgs)
         cbBaimena.SelectedIndex = 0
     End Sub
+
 End Class

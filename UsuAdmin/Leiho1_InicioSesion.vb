@@ -11,6 +11,11 @@ Public Class Leiho1_InicioSesion
     Dim server As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
     Dim konexion As MySqlConnection
 
+
+    Private Sub Leiho1_InicioSesion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        txtBezeroa.Select()
+    End Sub
+
     Function saioaHasi()
         Dim bezeroa As String
         Dim pasahitza As String
@@ -51,8 +56,7 @@ Public Class Leiho1_InicioSesion
                     End If
                 End While
             Else
-                'Errore mezua
-                MsgBox("Datu okerrak")
+                lblErrorea.Visible = True
             End If
 
         Catch ex As Exception
@@ -106,11 +110,11 @@ Public Class Leiho1_InicioSesion
         End Try
     End Function
 
-    Private Sub Leiho1_InicioSesion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    Private Sub txtPasahitza_KeyDown(sender As Object, e As KeyEventArgs) Handles txtPasahitza.KeyDown, txtBezeroa.KeyDown
+        Select Case e.KeyData
+            Case Keys.Enter
+                saioaHasi()
+        End Select
     End Sub
 
-    Private Sub btnHasiSaioa_KeyPress(sender As Object, e As KeyPressEventArgs) Handles btnHasiSaioa.KeyPress
-
-    End Sub
 End Class

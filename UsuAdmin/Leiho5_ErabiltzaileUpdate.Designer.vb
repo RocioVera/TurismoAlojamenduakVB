@@ -104,6 +104,7 @@ Partial Class Leiho5_ErabiltzaileUpdate
         '
         Me.abizena.Font = New System.Drawing.Font("Times New Roman", 12.0!)
         Me.abizena.Location = New System.Drawing.Point(106, 109)
+        Me.abizena.MaxLength = 50
         Me.abizena.Name = "abizena"
         Me.abizena.Size = New System.Drawing.Size(271, 26)
         Me.abizena.TabIndex = 9
@@ -112,6 +113,7 @@ Partial Class Leiho5_ErabiltzaileUpdate
         '
         Me.izena.Font = New System.Drawing.Font("Times New Roman", 12.0!)
         Me.izena.Location = New System.Drawing.Point(106, 62)
+        Me.izena.MaxLength = 50
         Me.izena.Name = "izena"
         Me.izena.Size = New System.Drawing.Size(271, 26)
         Me.izena.TabIndex = 10
@@ -185,6 +187,7 @@ Partial Class Leiho5_ErabiltzaileUpdate
         '
         Me.telefono.Font = New System.Drawing.Font("Times New Roman", 12.0!)
         Me.telefono.Location = New System.Drawing.Point(106, 253)
+        Me.telefono.MaxLength = 9
         Me.telefono.Name = "telefono"
         Me.telefono.Size = New System.Drawing.Size(271, 26)
         Me.telefono.TabIndex = 11
@@ -193,6 +196,7 @@ Partial Class Leiho5_ErabiltzaileUpdate
         '
         Me.email.Font = New System.Drawing.Font("Times New Roman", 12.0!)
         Me.email.Location = New System.Drawing.Point(106, 204)
+        Me.email.MaxLength = 50
         Me.email.Name = "email"
         Me.email.Size = New System.Drawing.Size(271, 26)
         Me.email.TabIndex = 7

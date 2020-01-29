@@ -26,6 +26,7 @@ Partial Class Leiho3_OstatuKudeaketa
         Me.btnEzabatu = New System.Windows.Forms.Button()
         Me.btnAtzera = New System.Windows.Forms.Button()
         Me.btnGehitu = New System.Windows.Forms.Button()
+        Me.lblErrorea = New System.Windows.Forms.Label()
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.SuspendLayout()
         '
@@ -33,7 +34,7 @@ Partial Class Leiho3_OstatuKudeaketa
         '
         Me.btnAldatu.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(239, Byte), Integer))
         Me.btnAldatu.Font = New System.Drawing.Font("Times New Roman", 12.0!)
-        Me.btnAldatu.Location = New System.Drawing.Point(3, 50)
+        Me.btnAldatu.Location = New System.Drawing.Point(3, 52)
         Me.btnAldatu.Name = "btnAldatu"
         Me.btnAldatu.Size = New System.Drawing.Size(76, 29)
         Me.btnAldatu.TabIndex = 1
@@ -44,7 +45,7 @@ Partial Class Leiho3_OstatuKudeaketa
         '
         Me.btnEzabatu.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(239, Byte), Integer))
         Me.btnEzabatu.Font = New System.Drawing.Font("Times New Roman", 12.0!)
-        Me.btnEzabatu.Location = New System.Drawing.Point(3, 84)
+        Me.btnEzabatu.Location = New System.Drawing.Point(3, 105)
         Me.btnEzabatu.Name = "btnEzabatu"
         Me.btnEzabatu.Size = New System.Drawing.Size(76, 29)
         Me.btnEzabatu.TabIndex = 2
@@ -73,6 +74,18 @@ Partial Class Leiho3_OstatuKudeaketa
         Me.btnGehitu.Text = "Gehitu"
         Me.btnGehitu.UseVisualStyleBackColor = False
         '
+        'lblErrorea
+        '
+        Me.lblErrorea.AutoSize = True
+        Me.lblErrorea.BackColor = System.Drawing.Color.Yellow
+        Me.lblErrorea.Font = New System.Drawing.Font("Times New Roman", 12.0!)
+        Me.lblErrorea.Location = New System.Drawing.Point(-1, 83)
+        Me.lblErrorea.Name = "lblErrorea"
+        Me.lblErrorea.Size = New System.Drawing.Size(92, 19)
+        Me.lblErrorea.TabIndex = 8
+        Me.lblErrorea.Text = " Hautatu bat! "
+        Me.lblErrorea.Visible = False
+        '
         'ListView1
         '
         Me.ListView1.FullRowSelect = True
@@ -80,7 +93,7 @@ Partial Class Leiho3_OstatuKudeaketa
         Me.ListView1.Location = New System.Drawing.Point(85, 6)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(572, 388)
-        Me.ListView1.TabIndex = 5
+        Me.ListView1.TabIndex = 9
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.List
         '
@@ -91,6 +104,7 @@ Partial Class Leiho3_OstatuKudeaketa
         Me.BackgroundImage = Global.UsuAdmin.My.Resources.Resources._03_BilatuOstatua1
         Me.ClientSize = New System.Drawing.Size(662, 403)
         Me.Controls.Add(Me.ListView1)
+        Me.Controls.Add(Me.lblErrorea)
         Me.Controls.Add(Me.btnGehitu)
         Me.Controls.Add(Me.btnAtzera)
         Me.Controls.Add(Me.btnEzabatu)
@@ -99,11 +113,13 @@ Partial Class Leiho3_OstatuKudeaketa
         Me.Name = "Leiho3_OstatuKudeaketa"
         Me.Text = "OstatuAgrad - Ostatu kudeaketa"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents btnAldatu As Button
     Friend WithEvents btnEzabatu As Button
     Friend WithEvents btnAtzera As Button
     Friend WithEvents btnGehitu As Button
+    Friend WithEvents lblErrorea As Label
     Friend WithEvents ListView1 As ListView
 End Class

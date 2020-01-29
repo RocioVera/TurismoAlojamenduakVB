@@ -52,6 +52,10 @@ Public Class Leiho5_OstatuUpdate
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        gorde()
+    End Sub
+
+    Private Sub gorde()
         'LAS VARIABLES A USAR
         Dim v_describapena As String
         Dim v_helbidea As String
@@ -290,10 +294,20 @@ Public Class Leiho5_OstatuUpdate
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        atzera()
+    End Sub
+
+    Private Sub atzera()
         Me.Hide()
         Dim f1 As New Leiho3_OstatuKudeaketa
         f1.Show()
     End Sub
-
-
+    Private Sub Leiho5_OstatuUpdate_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+        Select Case e.KeyData
+            Case Keys.Enter
+                gorde()
+            Case Keys.Escape
+                atzera()
+        End Select
+    End Sub
 End Class

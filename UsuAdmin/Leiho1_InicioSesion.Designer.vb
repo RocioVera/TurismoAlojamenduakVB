@@ -30,6 +30,7 @@ Partial Class Leiho1_InicioSesion
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lblErrorea = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -41,7 +42,7 @@ Partial Class Leiho1_InicioSesion
         Me.btnHasiSaioa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue
         Me.btnHasiSaioa.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnHasiSaioa.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btnHasiSaioa.Location = New System.Drawing.Point(74, 177)
+        Me.btnHasiSaioa.Location = New System.Drawing.Point(77, 199)
         Me.btnHasiSaioa.Name = "btnHasiSaioa"
         Me.btnHasiSaioa.Size = New System.Drawing.Size(113, 34)
         Me.btnHasiSaioa.TabIndex = 0
@@ -54,10 +55,10 @@ Partial Class Leiho1_InicioSesion
         Me.txtBezeroa.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtBezeroa.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtBezeroa.Location = New System.Drawing.Point(23, 51)
+        Me.txtBezeroa.MaxLength = 8
         Me.txtBezeroa.Name = "txtBezeroa"
         Me.txtBezeroa.Size = New System.Drawing.Size(226, 22)
         Me.txtBezeroa.TabIndex = 1
-        Me.txtBezeroa.Text = "11111111"
         '
         'txtPasahitza
         '
@@ -69,7 +70,6 @@ Partial Class Leiho1_InicioSesion
         Me.txtPasahitza.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPasahitza.Size = New System.Drawing.Size(226, 29)
         Me.txtPasahitza.TabIndex = 2
-        Me.txtPasahitza.Text = "ADMIN"
         '
         'lblKorreoa
         '
@@ -78,9 +78,9 @@ Partial Class Leiho1_InicioSesion
         Me.lblKorreoa.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblKorreoa.Location = New System.Drawing.Point(2, 18)
         Me.lblKorreoa.Name = "lblKorreoa"
-        Me.lblKorreoa.Size = New System.Drawing.Size(57, 25)
+        Me.lblKorreoa.Size = New System.Drawing.Size(66, 25)
         Me.lblKorreoa.TabIndex = 3
-        Me.lblKorreoa.Text = "DNI:"
+        Me.lblKorreoa.Text = "NAN:"
         '
         'lblPasahitza
         '
@@ -120,6 +120,7 @@ Partial Class Leiho1_InicioSesion
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(61, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.lblErrorea)
         Me.Panel1.Controls.Add(Me.lblKorreoa)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.btnHasiSaioa)
@@ -129,8 +130,21 @@ Partial Class Leiho1_InicioSesion
         Me.Panel1.Controls.Add(Me.txtPasahitza)
         Me.Panel1.Location = New System.Drawing.Point(169, 54)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(261, 224)
+        Me.Panel1.Size = New System.Drawing.Size(261, 245)
         Me.Panel1.TabIndex = 8
+        '
+        'lblErrorea
+        '
+        Me.lblErrorea.AutoSize = True
+        Me.lblErrorea.BackColor = System.Drawing.Color.Transparent
+        Me.lblErrorea.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
+        Me.lblErrorea.ForeColor = System.Drawing.Color.Red
+        Me.lblErrorea.Location = New System.Drawing.Point(14, 168)
+        Me.lblErrorea.Name = "lblErrorea"
+        Me.lblErrorea.Size = New System.Drawing.Size(230, 22)
+        Me.lblErrorea.TabIndex = 8
+        Me.lblErrorea.Text = "NAN-a edo pasahitza txarto"
+        Me.lblErrorea.Visible = False
         '
         'Leiho1_InicioSesion
         '
@@ -156,4 +170,5 @@ Partial Class Leiho1_InicioSesion
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents lblErrorea As Label
 End Class
