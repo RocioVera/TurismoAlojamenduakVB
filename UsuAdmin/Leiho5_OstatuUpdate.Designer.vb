@@ -24,13 +24,13 @@ Partial Class Leiho5_OstatuUpdate
     Private Sub InitializeComponent()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.cbHerriKodea = New System.Windows.Forms.ComboBox()
         Me.signatura = New System.Windows.Forms.Label()
         Me.cbHerria = New System.Windows.Forms.ComboBox()
         Me.lbHerria = New System.Windows.Forms.Label()
         Me.cbProbintzia = New System.Windows.Forms.ComboBox()
         Me.lblProbintzia = New System.Windows.Forms.Label()
         Me.cbPostaKodea = New System.Windows.Forms.ComboBox()
-        Me.cbHerriKodea = New System.Windows.Forms.ComboBox()
         Me.zipurl = New System.Windows.Forms.TextBox()
         Me.adiskidetsuurl = New System.Windows.Forms.TextBox()
         Me.weburl = New System.Windows.Forms.TextBox()
@@ -60,8 +60,8 @@ Partial Class Leiho5_OstatuUpdate
         Me.izena = New System.Windows.Forms.TextBox()
         Me.lblIzena = New System.Windows.Forms.Label()
         Me.lblSignatura = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnAldatu = New System.Windows.Forms.Button()
+        Me.btnAtzera = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.pertsonatot, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -78,13 +78,13 @@ Partial Class Leiho5_OstatuUpdate
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(107, Byte), Integer), CType(CType(177, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.cbHerriKodea)
         Me.Panel1.Controls.Add(Me.signatura)
         Me.Panel1.Controls.Add(Me.cbHerria)
         Me.Panel1.Controls.Add(Me.lbHerria)
         Me.Panel1.Controls.Add(Me.cbProbintzia)
         Me.Panel1.Controls.Add(Me.lblProbintzia)
         Me.Panel1.Controls.Add(Me.cbPostaKodea)
-        Me.Panel1.Controls.Add(Me.cbHerriKodea)
         Me.Panel1.Controls.Add(Me.zipurl)
         Me.Panel1.Controls.Add(Me.adiskidetsuurl)
         Me.Panel1.Controls.Add(Me.weburl)
@@ -114,17 +114,28 @@ Partial Class Leiho5_OstatuUpdate
         Me.Panel1.Controls.Add(Me.izena)
         Me.Panel1.Controls.Add(Me.lblIzena)
         Me.Panel1.Controls.Add(Me.lblSignatura)
-        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.btnAldatu)
         Me.Panel1.Location = New System.Drawing.Point(75, 5)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(624, 479)
         Me.Panel1.TabIndex = 48
         '
+        'cbHerriKodea
+        '
+        Me.cbHerriKodea.DisplayMember = "67"
+        Me.cbHerriKodea.Enabled = False
+        Me.cbHerriKodea.Font = New System.Drawing.Font("Times New Roman", 9.0!)
+        Me.cbHerriKodea.FormattingEnabled = True
+        Me.cbHerriKodea.Location = New System.Drawing.Point(312, 142)
+        Me.cbHerriKodea.Name = "cbHerriKodea"
+        Me.cbHerriKodea.Size = New System.Drawing.Size(145, 23)
+        Me.cbHerriKodea.TabIndex = 85
+        '
         'signatura
         '
         Me.signatura.AutoSize = True
         Me.signatura.Font = New System.Drawing.Font("Times New Roman", 12.0!)
-        Me.signatura.Location = New System.Drawing.Point(322, 9)
+        Me.signatura.Location = New System.Drawing.Point(333, 7)
         Me.signatura.Name = "signatura"
         Me.signatura.Size = New System.Drawing.Size(32, 19)
         Me.signatura.TabIndex = 84
@@ -133,6 +144,7 @@ Partial Class Leiho5_OstatuUpdate
         'cbHerria
         '
         Me.cbHerria.DisplayMember = "67"
+        Me.cbHerria.Enabled = False
         Me.cbHerria.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.cbHerria.FormattingEnabled = True
         Me.cbHerria.Location = New System.Drawing.Point(161, 142)
@@ -155,7 +167,7 @@ Partial Class Leiho5_OstatuUpdate
         Me.cbProbintzia.DisplayMember = "67"
         Me.cbProbintzia.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.cbProbintzia.FormattingEnabled = True
-        Me.cbProbintzia.Items.AddRange(New Object() {"Probintzia", "Araba", "Bizkaia", "Gipuzkoa"})
+        Me.cbProbintzia.Items.AddRange(New Object() {"Araba", "Bizkaia", "Gipuzkoa"})
         Me.cbProbintzia.Location = New System.Drawing.Point(10, 142)
         Me.cbProbintzia.Name = "cbProbintzia"
         Me.cbProbintzia.Size = New System.Drawing.Size(145, 23)
@@ -179,16 +191,6 @@ Partial Class Leiho5_OstatuUpdate
         Me.cbPostaKodea.Name = "cbPostaKodea"
         Me.cbPostaKodea.Size = New System.Drawing.Size(145, 23)
         Me.cbPostaKodea.TabIndex = 79
-        '
-        'cbHerriKodea
-        '
-        Me.cbHerriKodea.DisplayMember = "67"
-        Me.cbHerriKodea.Font = New System.Drawing.Font("Times New Roman", 9.0!)
-        Me.cbHerriKodea.FormattingEnabled = True
-        Me.cbHerriKodea.Location = New System.Drawing.Point(311, 142)
-        Me.cbHerriKodea.Name = "cbHerriKodea"
-        Me.cbHerriKodea.Size = New System.Drawing.Size(145, 23)
-        Me.cbHerriKodea.TabIndex = 78
         '
         'zipurl
         '
@@ -439,16 +441,16 @@ Partial Class Leiho5_OstatuUpdate
         'izena
         '
         Me.izena.Font = New System.Drawing.Font("Times New Roman", 9.0!)
-        Me.izena.Location = New System.Drawing.Point(293, 44)
+        Me.izena.Location = New System.Drawing.Point(170, 40)
         Me.izena.Name = "izena"
-        Me.izena.Size = New System.Drawing.Size(130, 21)
+        Me.izena.Size = New System.Drawing.Size(377, 21)
         Me.izena.TabIndex = 50
         '
         'lblIzena
         '
         Me.lblIzena.AutoSize = True
         Me.lblIzena.Font = New System.Drawing.Font("Times New Roman", 12.0!)
-        Me.lblIzena.Location = New System.Drawing.Point(248, 44)
+        Me.lblIzena.Location = New System.Drawing.Point(125, 40)
         Me.lblIzena.Name = "lblIzena"
         Me.lblIzena.Size = New System.Drawing.Size(44, 19)
         Me.lblIzena.TabIndex = 49
@@ -458,33 +460,33 @@ Partial Class Leiho5_OstatuUpdate
         '
         Me.lblSignatura.AutoSize = True
         Me.lblSignatura.Font = New System.Drawing.Font("Times New Roman", 12.0!)
-        Me.lblSignatura.Location = New System.Drawing.Point(248, 9)
+        Me.lblSignatura.Location = New System.Drawing.Point(259, 7)
         Me.lblSignatura.Name = "lblSignatura"
         Me.lblSignatura.Size = New System.Drawing.Size(68, 19)
         Me.lblSignatura.TabIndex = 48
         Me.lblSignatura.Text = "Signatura:"
         '
-        'Button1
+        'btnAldatu
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(239, Byte), Integer))
-        Me.Button1.Font = New System.Drawing.Font("Times New Roman", 12.0!)
-        Me.Button1.Location = New System.Drawing.Point(263, 439)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(106, 35)
-        Me.Button1.TabIndex = 14
-        Me.Button1.Text = "Ostatua aldatu"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnAldatu.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(239, Byte), Integer))
+        Me.btnAldatu.Font = New System.Drawing.Font("Times New Roman", 12.0!)
+        Me.btnAldatu.Location = New System.Drawing.Point(263, 439)
+        Me.btnAldatu.Name = "btnAldatu"
+        Me.btnAldatu.Size = New System.Drawing.Size(106, 35)
+        Me.btnAldatu.TabIndex = 14
+        Me.btnAldatu.Text = "Ostatua aldatu"
+        Me.btnAldatu.UseVisualStyleBackColor = False
         '
-        'Button4
+        'btnAtzera
         '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(239, Byte), Integer))
-        Me.Button4.Font = New System.Drawing.Font("Times New Roman", 9.0!)
-        Me.Button4.Location = New System.Drawing.Point(2, 5)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(67, 26)
-        Me.Button4.TabIndex = 85
-        Me.Button4.Text = "Ezeztatu"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.btnAtzera.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(239, Byte), Integer))
+        Me.btnAtzera.Font = New System.Drawing.Font("Times New Roman", 9.0!)
+        Me.btnAtzera.Location = New System.Drawing.Point(2, 5)
+        Me.btnAtzera.Name = "btnAtzera"
+        Me.btnAtzera.Size = New System.Drawing.Size(67, 26)
+        Me.btnAtzera.TabIndex = 85
+        Me.btnAtzera.Text = "Ezeztatu"
+        Me.btnAtzera.UseVisualStyleBackColor = False
         '
         'Leiho5_OstatuUpdate
         '
@@ -492,7 +494,7 @@ Partial Class Leiho5_OstatuUpdate
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.UsuAdmin.My.Resources.Resources._04_Aldatu
         Me.ClientSize = New System.Drawing.Size(713, 491)
-        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.btnAtzera)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Button2)
         Me.MaximizeBox = False
@@ -507,13 +509,12 @@ Partial Class Leiho5_OstatuUpdate
 
     Friend WithEvents Button2 As Button
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnAldatu As Button
     Friend WithEvents cbHerria As ComboBox
     Friend WithEvents lbHerria As Label
     Friend WithEvents cbProbintzia As ComboBox
     Friend WithEvents lblProbintzia As Label
     Friend WithEvents cbPostaKodea As ComboBox
-    Friend WithEvents cbHerriKodea As ComboBox
     Friend WithEvents zipurl As TextBox
     Friend WithEvents adiskidetsuurl As TextBox
     Friend WithEvents weburl As TextBox
@@ -544,5 +545,6 @@ Partial Class Leiho5_OstatuUpdate
     Friend WithEvents lblIzena As Label
     Friend WithEvents lblSignatura As Label
     Friend WithEvents signatura As Label
-    Friend WithEvents Button4 As Button
+    Friend WithEvents btnAtzera As Button
+    Friend WithEvents cbHerriKodea As ComboBox
 End Class

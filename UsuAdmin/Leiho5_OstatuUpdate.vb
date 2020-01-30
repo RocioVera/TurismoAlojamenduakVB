@@ -11,18 +11,42 @@ Public Class Leiho5_OstatuUpdate
     Dim data As New DataSet
     Dim cnn1 As MySqlConnection
     Dim server As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
-    Dim listaTxt As New List(Of TextBox)
-    Dim ok As New Leiho3_OstatuKudeaketa
     Dim hautatutakoOstatua As Ostatuak
+    Dim herrikod, probintzia As String
+
 
     Private Sub OstatuUpdatea_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SacarSignatura(v_izena, lista)
         PostaKodeakGuztiakKargatu()
         HerriaGuztiakKargatu()
         HerriKodeGuztiakKargatu()
-
+        ProbintziaHerriaAtera()
         gehituDatuak()
+    End Sub
 
+    Sub ProbintziaHerriaAtera()
+        Try
+            cnn1 = New MySqlConnection(server)
+            Dim sqlString As String = "SELECT probintzia, herri_izena FROM `posta_kodeak` WHERE HERRI_KODEA = '" & hautatutakoOstatua.HerriKodea & "' AND POSTA_KODEA=" & hautatutakoOstatua.PostaKodea
+            Dim SQL As New MySqlCommand(sqlString, cnn1)
+
+            SQL.Connection = cnn1
+            ' komando.CommandText = SQL
+            adapter.SelectCommand = komando
+            cnn1.Open()
+            dr = SQL.ExecuteReader
+
+            While dr.Read()
+                probintzia = dr.GetString(0)
+                herrikod = dr.GetString(1)
+            End While
+        Catch ex As Exception
+
+        Finally
+            cnn1.Close()
+        End Try
+        cbProbintzia.Text = probintzia
+        cbHerria.Text = herrikod
     End Sub
 
     Private Sub gehituDatuak()
@@ -40,9 +64,6 @@ Public Class Leiho5_OstatuUpdate
         weburl.Text = hautatutakoOstatua.WebUrl
         adiskidetsuurl.Text = hautatutakoOstatua.AdiskidetsuUrl
         zipurl.Text = hautatutakoOstatua.ZipUrl
-
-        'cbHerria.Text
-        'cbProbintzia.Text
         cbHerriKodea.Text = hautatutakoOstatua.HerriKodea
         cbPostaKodea.Text = hautatutakoOstatua.PostaKodea
     End Sub
@@ -51,42 +72,28 @@ Public Class Leiho5_OstatuUpdate
         hautatutakoOstatua = ostatua
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub btnAldatu_Click(sender As Object, e As EventArgs) Handles btnAldatu.Click
         gorde()
+
     End Sub
 
     Private Sub gorde()
         'LAS VARIABLES A USAR
-        Dim v_describapena As String
-        Dim v_helbidea As String
-        Dim v_marka As String
-        Dim v_email As String
-        Dim v_telefono As String
-        Dim v_pertsonatot As Integer
-        Dim v_latitude As String
-        Dim v_longitude As String
-        Dim v_mota As String
-        Dim v_webuerl As String
-        Dim v_adiskidetsu As String
-        Dim v_zip As String
-        Dim v_postakodea As String
-        Dim v_herrikodea As String
+        Dim v_describapena As String = deskribapena.Text.ToString
+        Dim v_helbidea As String = helbidea.Text.ToString
+        Dim v_marka As String = marka.Text.ToString
+        Dim v_email As String = email.Text.ToString
+        Dim v_telefono As String = telefonoa.Text.ToString
+        Dim v_pertsonatot As Integer = pertsonatot.Value.ToString
+        Dim v_latitude As String = latitudea.Text.ToString
+        Dim v_longitude As String = longitudea.Text.ToString
+        Dim v_mota As String = mota.Text.ToString
+        Dim v_webuerl As String = weburl.Text.ToString
+        Dim v_adiskidetsu As String = adiskidetsuurl.Text.ToString
+        Dim v_zip As String = zipurl.Text.ToString
+        Dim v_postakodea As String = cbPostaKodea.Text
+        Dim v_herrikodea As String = cbHerriKodea.Text
 
-        'DAR VALOR A LAS VARIABLES
-        v_describapena = deskribapena.Text.ToString
-        v_helbidea = helbidea.Text.ToString
-        v_marka = marka.Text.ToString
-        v_email = email.Text.ToString
-        v_telefono = telefonoa.Text.ToString
-        v_pertsonatot = pertsonatot.Value.ToString
-        v_latitude = latitudea.Text.ToString
-        v_longitude = longitudea.Text.ToString
-        v_mota = mota.Text.ToString
-        v_webuerl = weburl.Text.ToString
-        v_adiskidetsu = adiskidetsuurl.Text.ToString
-        v_zip = zipurl.Text.ToString
-        v_postakodea = cbPostaKodea.SelectedValue
-        v_herrikodea = cbHerriKodea.SelectedValue
         'LA UPDATE 
         Try
             cnn1 = New MySqlConnection(server)
@@ -102,15 +109,9 @@ Public Class Leiho5_OstatuUpdate
             MsgBox(ex.Message) ' para sacar los fallos de la update 
         End Try
         Me.Hide()
-        ' ok.Show()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Me.Hide()
-        'ok.Show()
-    End Sub
-
-    Function SacarSignatura(ByRef ostatuIzena, ByRef lista)
+    Sub SacarSignatura(ByRef ostatuIzena, ByRef lista)
         Try
             cnn1 = New MySqlConnection(server)
             Dim SQL As New MySqlCommand("SELECT ID_SIGNATURA FROM ostatuak WHERE OSTATU_IZENA = '" & ostatuIzena & "'", cnn1)
@@ -129,30 +130,28 @@ Public Class Leiho5_OstatuUpdate
         Catch ex As Exception
 
         End Try
-        'Return lista
-    End Function
+    End Sub
 
     Private Sub cbProbintzia_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbProbintzia.SelectedIndexChanged
-        If cbProbintzia.Text <> "Probintzia" Then
-            Dim sql As String
-            sql = "Select DISTINCT(HERRI_IZENA) FROM posta_kodeak WHERE upper(PROBINTZIA) Like '" & cbProbintzia.Text.ToUpper & "' ORDER BY HERRI_IZENA ASC"
-            HerriDropDownGehitu(sql)
-            sql = "SELECT DISTINCT(herri_kodea) FROM posta_kodeak WHERE upper(PROBINTZIA) LIKE '" & cbProbintzia.Text.ToUpper & "' ORDER BY herri_kodea ASC"
-            HerriKodeakDropDownGehitu(sql)
-            sql = "SELECT DISTINCT(posta_kodea) FROM posta_kodeak WHERE upper(PROBINTZIA) LIKE '" & cbProbintzia.Text.ToUpper & "' ORDER BY posta_kodea ASC"
-            PostaKodeakDropDownGehitu(sql)
-        Else
-            HerriaGuztiakKargatu()
-            HerriKodeGuztiakKargatu()
-            PostaKodeakGuztiakKargatu()
-        End If
+        Dim sql As String
+        sql = "Select DISTINCT(HERRI_IZENA) FROM posta_kodeak WHERE upper(PROBINTZIA) LIKE '" & cbProbintzia.Text.ToUpper & "' ORDER BY HERRI_IZENA ASC"
+        HerriDropDownGehitu(sql)
+        sql = "SELECT DISTINCT(herri_kodea) FROM posta_kodeak WHERE upper(PROBINTZIA) LIKE '" & cbProbintzia.Text.ToUpper & "' ORDER BY herri_kodea ASC"
+        HerriKodeakDropDownGehitu(sql)
+        sql = "SELECT DISTINCT(posta_kodea) FROM posta_kodeak WHERE upper(PROBINTZIA) LIKE '" & cbProbintzia.Text.ToUpper & "' ORDER BY posta_kodea ASC"
+        PostaKodeakDropDownGehitu(sql)
+        cbHerriKodea.Text = ""
+        cbPostaKodea.Text = ""
+        cbHerria.Text = ""
+        cbHerria.Enabled = True
+        cbHerriKodea.Enabled = False
+        cbPostaKodea.Enabled = False
     End Sub
 
     Private Sub HerriDropDownGehitu(sql As String)
         Try
             cbHerria.Items.Clear()
             'defektuzko balorea gehitzen da
-            cbHerria.Items.Add("Herriak")
             Dim das1 As New DataSet
             cnn1 = New MySqlConnection(server)
             cnn1.Open()
@@ -179,7 +178,6 @@ Public Class Leiho5_OstatuUpdate
         Try
             cbHerriKodea.Items.Clear()
             'defektuzko balorea gehitzen da
-            cbHerriKodea.Items.Add("Herri kodeak")
             Dim das1 As New DataSet
             cnn1 = New MySqlConnection(server)
             cnn1.Open()
@@ -208,7 +206,6 @@ Public Class Leiho5_OstatuUpdate
         Try
             cbPostaKodea.Items.Clear()
             'defektuzko balorea gehitzen da
-            cbPostaKodea.Items.Add("Posta kodeak")
             Dim das1 As New DataSet
             cnn1 = New MySqlConnection(server)
             cnn1.Open()
@@ -255,45 +252,41 @@ Public Class Leiho5_OstatuUpdate
     Private Sub cbHerria_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbHerria.SelectedIndexChanged
         Dim sql As String
 
-        If cbHerria.Text = "Herriak" And cbProbintzia.Text = "Probintzia" Then
-            HerriKodeGuztiakKargatu()
-        Else
-            If cbHerria.Text <> "Herriak" Then
-                sql = "SELECT DISTINCT(herri_kodea) FROM posta_kodeak WHERE upper(herri_izena) LIKE upper( '" & cbHerria.Text & "') "
+        If cbHerria.Text <> "" Then
+            sql = "SELECT DISTINCT(herri_kodea) FROM posta_kodeak WHERE upper(herri_izena) LIKE upper( '" & cbHerria.Text & "') "
 
-                If cbProbintzia.Text <> "Probintzia" Then
-                    sql += "AND upper(PROBINTZIA) LIKE '" & cbProbintzia.Text.ToUpper & "' "
-                End If
-
-                sql += "ORDER BY herri_kodea ASC"
-                HerriKodeakDropDownGehitu(sql)
-                sql = "SELECT DISTINCT(posta_kodea) FROM posta_kodeak WHERE upper(PROBINTZIA) LIKE '" & cbProbintzia.Text.ToUpper & "' ORDER BY posta_kodea ASC"
-                PostaKodeakDropDownGehitu(sql)
-            Else
-                If cbProbintzia.Text <> "Probintzia" Then
-                    sql += "SELECT DISTINCT(herri_kodea) FROM posta_kodeak WHERE upper(PROBINTZIA) LIKE '" & cbProbintzia.Text.ToUpper & "' "
-                Else
-                    sql += "SELECT DISTINCT(herri_kodea) FROM posta_kodeak "
-                End If
-                sql += " ORDER BY herri_kodea ASC"
-                HerriKodeakDropDownGehitu(sql)
-                sql = "SELECT DISTINCT(posta_kodea) FROM posta_kodeak WHERE upper(PROBINTZIA) LIKE '" & cbProbintzia.Text.ToUpper & "' ORDER BY posta_kodea ASC"
-                PostaKodeakDropDownGehitu(sql)
+            If cbProbintzia.Text <> "Probintzia" Then
+                sql += "AND upper(PROBINTZIA) LIKE '" & cbProbintzia.Text.ToUpper & "' "
             End If
 
-        End If
-    End Sub
-
-    Private Sub cbHerriKodea_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbHerriKodea.SelectedIndexChanged
-        If cbHerria.Text = "Herri kodeak" Then
-            PostaKodeakGuztiakKargatu()
+            sql += "ORDER BY herri_kodea ASC"
+            HerriKodeakDropDownGehitu(sql)
+            sql = "SELECT DISTINCT(posta_kodea) FROM posta_kodeak WHERE upper(PROBINTZIA) LIKE '" & cbProbintzia.Text.ToUpper & "' ORDER BY posta_kodea ASC"
+            PostaKodeakDropDownGehitu(sql)
         Else
-            Dim sql = "SELECT DISTINCT(posta_kodea) FROM posta_kodeak WHERE herri_kodea = '" & cbHerriKodea.SelectedValue & "' ORDER BY posta_kodea ASC"
+            If cbProbintzia.Text <> "" Then
+                sql += "SELECT DISTINCT(herri_kodea) FROM posta_kodeak WHERE upper(PROBINTZIA) LIKE '" & cbProbintzia.Text.ToUpper & "' "
+            Else
+                sql += "SELECT DISTINCT(herri_kodea) FROM posta_kodeak "
+            End If
+            sql += " ORDER BY herri_kodea ASC"
+            HerriKodeakDropDownGehitu(sql)
+            sql = "SELECT DISTINCT(posta_kodea) FROM posta_kodeak WHERE upper(PROBINTZIA) LIKE '" & cbProbintzia.Text.ToUpper & "' ORDER BY posta_kodea ASC"
             PostaKodeakDropDownGehitu(sql)
         End If
+        cbHerriKodea.Enabled = True
+        cbPostaKodea.Enabled = False
+        cbHerriKodea.Text = ""
+        cbPostaKodea.Text = ""
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub cbHerriKodea_SelectedIndexChanged(sender As Object, e As EventArgs)
+        Dim sql = "SELECT DISTINCT(posta_kodea) FROM posta_kodeak WHERE herri_kodea = '" & cbHerriKodea.SelectedValue & "' ORDER BY posta_kodea ASC"
+        PostaKodeakDropDownGehitu(sql)
+        cbPostaKodea.Enabled = True
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles btnAtzera.Click
         atzera()
     End Sub
 
@@ -302,6 +295,15 @@ Public Class Leiho5_OstatuUpdate
         Dim f1 As New Leiho3_OstatuKudeaketa
         f1.Show()
     End Sub
+
+    Private Sub cbHerriKodea_SelectedIndexChanged_1(sender As Object, e As EventArgs) Handles cbHerriKodea.SelectedIndexChanged
+        Dim sql = "SELECT DISTINCT(posta_kodea) FROM posta_kodeak WHERE herri_kodea = '" & cbHerriKodea.Text & "' ORDER BY posta_kodea ASC"
+        PostaKodeakDropDownGehitu(sql)
+        cbPostaKodea.Enabled = True
+        cbPostaKodea.Text = ""
+
+    End Sub
+
     Private Sub Leiho5_OstatuUpdate_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
         Select Case e.KeyData
             Case Keys.Enter

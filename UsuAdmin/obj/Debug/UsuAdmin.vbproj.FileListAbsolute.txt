@@ -203,7 +203,6 @@ G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\UsuA
 G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\UsuAdmin.exe
 G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\UsuAdmin.pdb
 G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\UsuAdmin.xml
-G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\MySql.Data.dll
 G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\Google.Protobuf.dll
 G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\BouncyCastle.Crypto.dll
 G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\Renci.SshNet.dll
