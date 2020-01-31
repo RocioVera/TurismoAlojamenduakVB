@@ -7,7 +7,8 @@ Public Class Leiho3_OstatuakIkusiN
     Dim adapter As New MySqlDataAdapter
     Dim data As New DataSet
     Dim cnn1 As MySqlConnection
-    Dim direccion As String = "server=localhost;user=root;database=datubasea;port=3306;"
+    'Dim direccion As String = "server=localhost;user=root;database=datubasea;port=3306;"
+    Dim direccion As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
 
 
 

@@ -3,7 +3,8 @@
 Public Class Leiho5_ErreserbaUpdate
     Dim komando As New MySqlCommand
     Dim cnn1 As MySqlConnection
-    Dim direccion As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
+    ' Dim direccion As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
+    Dim server As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
     Dim ek As New Leiho3_ErreserbaKudeaketa
     Dim v_id_erreserba As Integer
     Dim hautatutakoErreserba As Erreserbak

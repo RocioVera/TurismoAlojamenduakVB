@@ -5,7 +5,8 @@ Public Class Leiho4_OstatuInsert
     Dim komando As New MySqlCommand
     Dim data As New DataSet
     Dim cnn1 As MySqlConnection
-    Dim server As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
+    ' Dim server As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
+    Dim server As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
     Dim v_signatura As String
     Private Sub Leiho4_OstatuInsert_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         HerriKodeGuztiakKargatu()

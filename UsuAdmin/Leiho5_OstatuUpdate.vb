@@ -1,7 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class Leiho5_OstatuUpdate
-    Dim v_signatura As String 'PRUEBAN 
     Dim lista As String
 
     Public v_izena As String
@@ -10,7 +9,10 @@ Public Class Leiho5_OstatuUpdate
     Dim adapter As New MySqlDataAdapter
     Dim data As New DataSet
     Dim cnn1 As MySqlConnection
-    Dim server As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
+    '
+    'Dim server As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
+    Dim server As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
+
     Dim hautatutakoOstatua As Ostatuak
     Dim herrikod, probintzia As String
 
@@ -93,22 +95,30 @@ Public Class Leiho5_OstatuUpdate
         Dim v_zip As String = zipurl.Text.ToString
         Dim v_postakodea As String = cbPostaKodea.Text
         Dim v_herrikodea As String = cbHerriKodea.Text
+        Dim v_izena As String = izena.Text
 
         'LA UPDATE 
         Try
             cnn1 = New MySqlConnection(server)
-            Dim SQL2 As New MySqlCommand("UPDATE ostatuak set ID_SIGNATURA = '" & v_signatura & "' , OSTATU_IZENA = '" & v_helbidea & " ' , DESKRIBAPENA = '" & v_describapena & "' , OSTATU_HELBIDEA = '" & v_email & "' , OSTATU_TELEFONOA = '" & v_telefono & "' , MARKA = '" & v_marka & "'  , OSTATU_EMAIL = '" & v_email & "', PERTSONA_TOT = '" & v_pertsonatot & " ', LATITUDE = '" & v_latitude & "', LONGITUDE = '" & v_longitude & "' , MOTA = '" & v_mota & "', WEB_URL = '" & v_webuerl & "', ADISKIDETSU_URL = '" & v_adiskidetsu & "', ZIP_URL = '" & v_zip & "', POSTA_KODEA = '" & v_postakodea & "', HERRI_KODEA = '" & v_herrikodea & "' WHERE OSTATU_IZENA  = '" & v_izena & "'", cnn1)
+
+            Dim SQLstring As String = "UPDATE ostatuak set OSTATU_IZENA = '" & v_izena & "' , DESKRIBAPENA = '" & v_describapena & "' , OSTATU_HELBIDEA = '" & v_helbidea & "' , OSTATU_TELEFONOA = '" & v_telefono & "' , MARKA = '" & v_marka & "' , OSTATU_EMAIL = '" & v_email & "', PERTSONA_TOT = '" & v_pertsonatot & "', LATITUDE = '" & v_latitude & "', LONGITUDE = '" & v_longitude & "' , MOTA = '" & v_mota & "', WEB_URL = '" & v_webuerl & "', ADISKIDETSU_URL = '" & v_adiskidetsu & "', ZIP_URL = '" & v_zip & "', POSTA_KODEA = '" & v_postakodea & "', HERRI_KODEA = '" & v_herrikodea & "' WHERE ID_SIGNATURA = '" & hautatutakoOstatua.IdSignatura & "'"
+            Dim SQL2 As New MySqlCommand(SQLstring, cnn1)
             ' importante para la conexion y ejecutar las sentencias sql
             komando.Connection = cnn1
             cnn1.Open()
             SQL2.ExecuteNonQuery()
             ' limpiar
             data.Clear()
-            cnn1.Close()
+
         Catch ex As Exception
             MsgBox(ex.Message) ' para sacar los fallos de la update 
+        Finally
+            cnn1.Close()
         End Try
+
         Me.Hide()
+        Dim otk As New Leiho3_OstatuKudeaketa
+        otk.Show()
     End Sub
 
     Sub SacarSignatura(ByRef ostatuIzena, ByRef lista)
@@ -303,6 +313,8 @@ Public Class Leiho5_OstatuUpdate
         cbPostaKodea.Text = ""
 
     End Sub
+
+
 
     Private Sub Leiho5_OstatuUpdate_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
         Select Case e.KeyData

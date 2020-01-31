@@ -3,7 +3,9 @@
 Public Class Leiho5_ErabiltzaileUpdate
     Dim komando As New MySqlCommand
     Dim cnn1 As MySqlConnection
-    Dim direccion As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
+    'Dim direccion As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
+    Dim direccion As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
+
     Public hautatutakoBezeroa As Bezeroa
 
     Private Sub ErabiltzaileUpdate_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -111,13 +113,13 @@ Public Class Leiho5_ErabiltzaileUpdate
         If cont = 0 Then
             Try
                 cnn1 = New MySqlConnection(direccion)
-                Dim SQL As String = "UPDATE erabiltzaileak set ERABIL_IZENA = '" & v_izena_E & "' , ABIZENAK = '" & v_abizena_E & "' , BAIMENA = " & v_baimena & ", ERABIL_EMAIL = '" & v_email_E & "', ERABIL_TELEFONO = '" & v_telefono_E & "' WHERE NAN = '" & v_NAN_E & "'"
+                Dim SQL As String = "UPDATE erabiltzaileak set ERABIL_IZENA = '" & v_izena_E & "' , ABIZENAK = '" & v_abizena_E & "' , BAIMENA = " & v_baimena & ", ERABIL_EMAIL = '" & v_email_E & "', ERABIL_TELEFONO = '" & v_telefono_E & "' WHERE NAN = '" & AES_Encrypt(Me.nan.Text.ToString, "encriptado") & "'"
                 Dim SQL2 As New MySqlCommand(SQL, cnn1)
                 'importante para la conexion y ejecutar las sentencias sql
                 komando.Connection = cnn1
                 cnn1.Open()
                 SQL2.ExecuteNonQuery()
-                cnn1.Close()
+
             Catch ex As Exception
                 MsgBox(ex.Message) 'para sacar los fallos de la update 
             End Try
@@ -128,6 +130,8 @@ Public Class Leiho5_ErabiltzaileUpdate
             MsgBox("Berriz saiatu")
             cont = 0
         End If
+
+        cnn1.Close()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
