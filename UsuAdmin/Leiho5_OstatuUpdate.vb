@@ -9,8 +9,8 @@ Public Class Leiho5_OstatuUpdate
     Dim adapter As New MySqlDataAdapter
     Dim data As New DataSet
     Dim cnn1 As MySqlConnection
-    Dim server As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
-    'Dim server As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
+    'Dim server As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
+    Dim server As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
 
     Dim hautatutakoOstatua As Ostatuak
     Dim herrikod, probintzia As String

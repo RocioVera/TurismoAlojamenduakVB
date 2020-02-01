@@ -4,8 +4,8 @@ Imports MySql.Data.MySqlClient
 Public Class Leiho5_ErabiltzaileUpdate
     Dim komando As New MySqlCommand
     Dim cnn1 As MySqlConnection
-    Dim server As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
-    'Dim server As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
+    'Dim server As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
+    Dim server As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
 
     Public hautatutakoBezeroa As Bezeroa
 

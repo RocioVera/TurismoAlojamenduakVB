@@ -2,8 +2,8 @@
 
 Public Class Leiho1_InicioSesion
     Dim datos As New ArrayList
-    'Dim server As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
-    Dim server As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
+    Dim server As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
+    'Dim server As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
     Dim konexion As MySqlConnection
 
     Private Sub Leiho1_InicioSesion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
