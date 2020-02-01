@@ -1,12 +1,12 @@
 ﻿Imports MySql.Data.MySqlClient
 
-Public Class ErabiltzaileakIkusiN
+Public Class ErabiltzaileakIkusiEZ
     Dim dr As MySqlDataReader
     Dim komando As New MySqlCommand
     Dim adapter As New MySqlDataAdapter
     Dim data As New DataSet
     Dim cnn1 As MySqlConnection
-    Dim direccion As String = "server=localhost;user=root;database=datubasea;port=3306;"
+    Dim server As String = "server=localhost;user=root;database=datubasea;port=3306;"
 
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -27,7 +27,7 @@ Public Class ErabiltzaileakIkusiN
         Next
 
         Try
-            cnn1 = New MySqlConnection(direccion)
+            cnn1 = New MySqlConnection(server)
 
             Dim SQL As String = "SELECT NAN , ERABIL_IZENA , ABIZENAK , BAIMENA , ERABIL_EMAIL , ERABIL_TELEFONO FROM erabiltzaileak"
 

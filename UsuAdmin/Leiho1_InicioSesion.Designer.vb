@@ -31,6 +31,7 @@ Partial Class Leiho1_InicioSesion
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblErrorea = New System.Windows.Forms.Label()
+        Me.lblErrorea2 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -42,7 +43,7 @@ Partial Class Leiho1_InicioSesion
         Me.btnHasiSaioa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue
         Me.btnHasiSaioa.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnHasiSaioa.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btnHasiSaioa.Location = New System.Drawing.Point(77, 199)
+        Me.btnHasiSaioa.Location = New System.Drawing.Point(66, 186)
         Me.btnHasiSaioa.Name = "btnHasiSaioa"
         Me.btnHasiSaioa.Size = New System.Drawing.Size(113, 34)
         Me.btnHasiSaioa.TabIndex = 0
@@ -59,6 +60,7 @@ Partial Class Leiho1_InicioSesion
         Me.txtBezeroa.Name = "txtBezeroa"
         Me.txtBezeroa.Size = New System.Drawing.Size(226, 22)
         Me.txtBezeroa.TabIndex = 1
+        Me.txtBezeroa.Text = "11111111"
         '
         'txtPasahitza
         '
@@ -70,6 +72,7 @@ Partial Class Leiho1_InicioSesion
         Me.txtPasahitza.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPasahitza.Size = New System.Drawing.Size(226, 29)
         Me.txtPasahitza.TabIndex = 2
+        Me.txtPasahitza.Text = "ADMIN"
         '
         'lblKorreoa
         '
@@ -99,7 +102,7 @@ Partial Class Leiho1_InicioSesion
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Red
-        Me.Label2.Location = New System.Drawing.Point(52, 9)
+        Me.Label2.Location = New System.Drawing.Point(65, 15)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(17, 24)
         Me.Label2.TabIndex = 6
@@ -130,7 +133,7 @@ Partial Class Leiho1_InicioSesion
         Me.Panel1.Controls.Add(Me.txtPasahitza)
         Me.Panel1.Location = New System.Drawing.Point(169, 54)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(261, 245)
+        Me.Panel1.Size = New System.Drawing.Size(262, 231)
         Me.Panel1.TabIndex = 8
         '
         'lblErrorea
@@ -139,12 +142,25 @@ Partial Class Leiho1_InicioSesion
         Me.lblErrorea.BackColor = System.Drawing.Color.Transparent
         Me.lblErrorea.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
         Me.lblErrorea.ForeColor = System.Drawing.Color.Red
-        Me.lblErrorea.Location = New System.Drawing.Point(14, 168)
+        Me.lblErrorea.Location = New System.Drawing.Point(17, 161)
         Me.lblErrorea.Name = "lblErrorea"
-        Me.lblErrorea.Size = New System.Drawing.Size(230, 22)
+        Me.lblErrorea.Size = New System.Drawing.Size(115, 22)
         Me.lblErrorea.TabIndex = 8
-        Me.lblErrorea.Text = "NAN-a edo pasahitza txarto"
+        Me.lblErrorea.Text = "errore mezua"
         Me.lblErrorea.Visible = False
+        '
+        'lblErrorea2
+        '
+        Me.lblErrorea2.AutoSize = True
+        Me.lblErrorea2.BackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(61, Byte), Integer))
+        Me.lblErrorea2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
+        Me.lblErrorea2.ForeColor = System.Drawing.Color.Red
+        Me.lblErrorea2.Location = New System.Drawing.Point(74, 277)
+        Me.lblErrorea2.Name = "lblErrorea2"
+        Me.lblErrorea2.Size = New System.Drawing.Size(469, 22)
+        Me.lblErrorea2.TabIndex = 10
+        Me.lblErrorea2.Text = "  Lanean gabiz, oraindik ezin zara sartu, webgunera joan. "
+        Me.lblErrorea2.Visible = False
         '
         'Leiho1_InicioSesion
         '
@@ -152,6 +168,7 @@ Partial Class Leiho1_InicioSesion
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.UsuAdmin.My.Resources.Resources._01_SartuBezeroa
         Me.ClientSize = New System.Drawing.Size(625, 357)
+        Me.Controls.Add(Me.lblErrorea2)
         Me.Controls.Add(Me.Panel1)
         Me.MaximizeBox = False
         Me.Name = "Leiho1_InicioSesion"
@@ -159,6 +176,7 @@ Partial Class Leiho1_InicioSesion
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -171,4 +189,5 @@ Partial Class Leiho1_InicioSesion
     Friend WithEvents Label3 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents lblErrorea As Label
+    Friend WithEvents lblErrorea2 As Label
 End Class

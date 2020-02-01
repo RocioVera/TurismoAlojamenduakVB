@@ -156,7 +156,7 @@ Partial Class Leiho5_ErreserbaUpdate
         Me.Controls.Add(Me.Button2)
         Me.MaximizeBox = False
         Me.Name = "Leiho5_ErreserbaUpdate"
-        Me.Text = "OstatuAgrad - Erreserba aldaketa"
+        Me.Text = "OstatuAgrad- Administratzailea - Erreserba aldaketa"
         CType(Me.p_cant, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

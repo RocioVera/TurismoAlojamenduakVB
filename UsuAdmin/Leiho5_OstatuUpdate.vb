@@ -9,9 +9,8 @@ Public Class Leiho5_OstatuUpdate
     Dim adapter As New MySqlDataAdapter
     Dim data As New DataSet
     Dim cnn1 As MySqlConnection
-    '
-    'Dim server As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
-    Dim server As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
+    Dim server As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
+    'Dim server As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
 
     Dim hautatutakoOstatua As Ostatuak
     Dim herrikod, probintzia As String
@@ -314,7 +313,14 @@ Public Class Leiho5_OstatuUpdate
 
     End Sub
 
-
+    Private Sub izena_KeyDown(sender As Object, e As KeyEventArgs) Handles zipurl.KeyDown, weburl.KeyDown, telefonoa.KeyDown, pertsonatot.KeyDown, mota.KeyDown, marka.KeyDown, longitudea.KeyDown, latitudea.KeyDown, izena.KeyDown, helbidea.KeyDown, email.KeyDown, deskribapena.KeyDown, cbProbintzia.KeyDown, cbPostaKodea.KeyDown, cbHerriKodea.KeyDown, cbHerria.KeyDown, adiskidetsuurl.KeyDown
+        Select Case e.KeyData
+            Case Keys.Enter
+                gorde()
+            Case Keys.Escape
+                atzera()
+        End Select
+    End Sub
 
     Private Sub Leiho5_OstatuUpdate_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
         Select Case e.KeyData

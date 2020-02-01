@@ -14,7 +14,7 @@
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs)
-        Dim p As New Erreserba
+        Dim p As New ErreserbaV2
         p.Show()
 
     End Sub

@@ -499,7 +499,7 @@ Partial Class Leiho5_OstatuUpdate
         Me.Controls.Add(Me.Button2)
         Me.MaximizeBox = False
         Me.Name = "Leiho5_OstatuUpdate"
-        Me.Text = "OstatuAgrad - Ostatu aldaketa"
+        Me.Text = "OstatuAgrad - Administratzailea - Ostatu aldaketa"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.pertsonatot, System.ComponentModel.ISupportInitialize).EndInit()

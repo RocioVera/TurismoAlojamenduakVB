@@ -489,7 +489,7 @@ Partial Class Leiho4_OstatuInsert
         Me.Controls.Add(Me.Panel1)
         Me.MaximizeBox = False
         Me.Name = "Leiho4_OstatuInsert"
-        Me.Text = "OstatuAgrad - Ostatua gehitu"
+        Me.Text = "OstatuAgrad - Administratzailea  - Ostatua gehitu"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.pertsonatot, System.ComponentModel.ISupportInitialize).EndInit()

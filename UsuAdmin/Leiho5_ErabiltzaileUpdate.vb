@@ -1,10 +1,11 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.Text.RegularExpressions
+Imports MySql.Data.MySqlClient
 
 Public Class Leiho5_ErabiltzaileUpdate
     Dim komando As New MySqlCommand
     Dim cnn1 As MySqlConnection
-    'Dim direccion As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
-    Dim direccion As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
+    Dim server As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
+    'Dim server As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
 
     Public hautatutakoBezeroa As Bezeroa
 
@@ -28,7 +29,21 @@ Public Class Leiho5_ErabiltzaileUpdate
         hautatutakoBezeroa = hb
     End Sub
 
+
+    Private Sub izena_KeyDown(sender As Object, e As KeyEventArgs) Handles telefono.KeyDown, izena.KeyDown, email.KeyDown, cbBaimena.KeyDown, abizena.KeyDown
+        Select Case e.KeyData
+            Case Keys.Enter
+                updatear()
+            Case Keys.Escape
+                atzera()
+        End Select
+    End Sub
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnGorde.Click
+        updatear()
+    End Sub
+
+    Public Sub updatear()
         'datuak gordetzeko aldagaiak 
         Dim v_NAN As Integer
         Dim v_izena As String
@@ -39,6 +54,11 @@ Public Class Leiho5_ErabiltzaileUpdate
             v_baimena = 0
         ElseIf baimena = "Gonbidatua" Then
             v_baimena = 1
+        ElseIf baimena = "Bezero normala" Then
+            v_baimena = 2
+        Else
+            v_baimena = -1
+
         End If
         Dim v_email As String
         Dim v_telefono As Integer
@@ -83,15 +103,20 @@ Public Class Leiho5_ErabiltzaileUpdate
             cont += 1
         End Try
 
-        Try
-            v_email = Me.email.Text.ToString
-            email.BackColor = Color.Green
-        Catch ex As Exception
-            email.Text = ""
+        If (validar_Mail(email.Text.ToString) = True) Then 'korreoa balidatu
+            Try
+                v_email = Me.email.Text.ToString
+                email.BackColor = Color.Green
+            Catch ex As Exception
+                email.Focus()
+                email.BackColor = Color.Red
+                cont += 1
+            End Try
+        Else
             email.Focus()
             email.BackColor = Color.Red
             cont += 1
-        End Try
+        End If
 
         Try
             v_telefono = Integer.Parse(Me.telefono.Text.ToString)
@@ -103,6 +128,14 @@ Public Class Leiho5_ErabiltzaileUpdate
             cont += 1
         End Try
 
+        If v_baimena = -1 Then
+            cbBaimena.Focus()
+            cbBaimena.BackColor = Color.Red
+            cont += 1
+        Else
+            cbBaimena.BackColor = Color.Green
+        End If
+
         'ENCRIPTAMOS LOS DATOS 
         v_NAN_E = AES_Encrypt(v_NAN, "encriptado")
         v_izena_E = AES_Encrypt(v_izena, "encriptado")
@@ -112,29 +145,36 @@ Public Class Leiho5_ErabiltzaileUpdate
 
         If cont = 0 Then
             Try
-                cnn1 = New MySqlConnection(direccion)
+                cnn1 = New MySqlConnection(server)
                 Dim SQL As String = "UPDATE erabiltzaileak set ERABIL_IZENA = '" & v_izena_E & "' , ABIZENAK = '" & v_abizena_E & "' , BAIMENA = " & v_baimena & ", ERABIL_EMAIL = '" & v_email_E & "', ERABIL_TELEFONO = '" & v_telefono_E & "' WHERE NAN = '" & AES_Encrypt(Me.nan.Text.ToString, "encriptado") & "'"
                 Dim SQL2 As New MySqlCommand(SQL, cnn1)
                 'importante para la conexion y ejecutar las sentencias sql
                 komando.Connection = cnn1
                 cnn1.Open()
                 SQL2.ExecuteNonQuery()
-
+                Me.Hide()
+                Dim aldatu As New Leiho3_ErabiltzaileKudeaketa
+                aldatu.Show()
             Catch ex As Exception
-                MsgBox(ex.Message) 'para sacar los fallos de la update 
+                'MsgBox(ex.Message) 'para sacar los fallos de la update 
+            Finally
+                cnn1.Close()
             End Try
-            Me.Hide()
-            Dim aldatu As New Leiho3_ErabiltzaileKudeaketa
-            aldatu.Show()
         Else
-            MsgBox("Berriz saiatu")
+            lblErrorea.Visible = True
             cont = 0
         End If
-
-        cnn1.Close()
     End Sub
 
+    Public Function validar_Mail(ByVal sMail As String) As Boolean
+        Return Regex.IsMatch(sMail, "^([\w-]+\.)*?[\w-]+@[\w-]+\.([\w-]+\.)*?[\w]+$")
+    End Function
+
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        atzera()
+    End Sub
+
+    Private Sub atzera()
         Me.Hide()
         Dim ez As New Leiho3_ErabiltzaileKudeaketa
         ez.Show()
@@ -164,7 +204,4 @@ Public Class Leiho5_ErabiltzaileUpdate
         End Try
     End Function
 
-    Private Sub cbBaimena_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbBaimena.SelectedIndexChanged
-
-    End Sub
 End Class

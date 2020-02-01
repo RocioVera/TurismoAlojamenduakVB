@@ -111,7 +111,7 @@ Partial Class Leiho3_OstatuKudeaketa
         Me.Controls.Add(Me.btnAldatu)
         Me.MaximizeBox = False
         Me.Name = "Leiho3_OstatuKudeaketa"
-        Me.Text = "OstatuAgrad - Ostatu kudeaketa"
+        Me.Text = "OstatuAgrad - Administratzailea   - Ostatu kudeaketa"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

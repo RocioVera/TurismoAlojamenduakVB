@@ -91,16 +91,16 @@
     <Compile Include="Leiho3_ErabiltzaileKudeaketa.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ErabiltzaileakIkusiN.Designer.vb">
-      <DependentUpon>ErabiltzaileakIkusiN.vb</DependentUpon>
+    <Compile Include="ErabiltzaileakIkusiV2.Designer.vb">
+      <DependentUpon>ErabiltzaileakIkusiV2.vb</DependentUpon>
     </Compile>
-    <Compile Include="ErabiltzaileakIkusiN.vb">
+    <Compile Include="ErabiltzaileakIkusiV2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Erreserba.Designer.vb">
-      <DependentUpon>Erreserba.vb</DependentUpon>
+    <Compile Include="ErreserbaV2.Designer.vb">
+      <DependentUpon>ErreserbaV2.vb</DependentUpon>
     </Compile>
-    <Compile Include="Erreserba.vb">
+    <Compile Include="ErreserbaV2.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Leiho3_ErreserbaKudeaketa.Designer.vb">
@@ -133,16 +133,16 @@
     <Compile Include="Leiho5_OstatuUpdate.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Leiho3_OstatuakIkusiN.Designer.vb">
-      <DependentUpon>Leiho3_OstatuakIkusiN.vb</DependentUpon>
+    <Compile Include="OstatuakIkusiV2.Designer.vb">
+      <DependentUpon>OstatuakIkusiV2.vb</DependentUpon>
     </Compile>
-    <Compile Include="Leiho3_OstatuakIkusiN.vb">
+    <Compile Include="OstatuakIkusiV2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Leiho2_AukeraBezeroNormala.Designer.vb">
-      <DependentUpon>Leiho2_AukeraBezeroNormala.vb</DependentUpon>
+    <Compile Include="AukeraBezeroNormalaV2.Designer.vb">
+      <DependentUpon>AukeraBezeroNormalaV2.vb</DependentUpon>
     </Compile>
-    <Compile Include="Leiho2_AukeraBezeroNormala.vb">
+    <Compile Include="AukeraBezeroNormalaV2.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Leiho3_OstatuKudeaketa.Designer.vb">
@@ -185,8 +185,8 @@
     <EmbeddedResource Include="Leiho2_AurkeraAdmin.resx">
       <DependentUpon>Leiho2_AurkeraAdmin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ErabiltzaileakIkusiN.resx">
-      <DependentUpon>ErabiltzaileakIkusiN.vb</DependentUpon>
+    <EmbeddedResource Include="ErabiltzaileakIkusiV2.resx">
+      <DependentUpon>ErabiltzaileakIkusiV2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Leiho4_ErabiltzaileInsert.resx">
       <DependentUpon>Leiho4_ErabiltzaileInsert.vb</DependentUpon>
@@ -194,8 +194,8 @@
     <EmbeddedResource Include="Leiho3_ErabiltzaileKudeaketa.resx">
       <DependentUpon>Leiho3_ErabiltzaileKudeaketa.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Erreserba.resx">
-      <DependentUpon>Erreserba.vb</DependentUpon>
+    <EmbeddedResource Include="ErreserbaV2.resx">
+      <DependentUpon>ErreserbaV2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Leiho3_ErreserbaKudeaketa.resx">
       <DependentUpon>Leiho3_ErreserbaKudeaketa.vb</DependentUpon>
@@ -212,8 +212,8 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Leiho3_OstatuakIkusiN.resx">
-      <DependentUpon>Leiho3_OstatuakIkusiN.vb</DependentUpon>
+    <EmbeddedResource Include="OstatuakIkusiV2.resx">
+      <DependentUpon>OstatuakIkusiV2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Leiho4_OstatuInsert.resx">
       <DependentUpon>Leiho4_OstatuInsert.vb</DependentUpon>
@@ -227,8 +227,8 @@
     <EmbeddedResource Include="Leiho5_OstatuUpdate.resx">
       <DependentUpon>Leiho5_OstatuUpdate.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Leiho2_AukeraBezeroNormala.resx">
-      <DependentUpon>Leiho2_AukeraBezeroNormala.vb</DependentUpon>
+    <EmbeddedResource Include="AukeraBezeroNormalaV2.resx">
+      <DependentUpon>AukeraBezeroNormalaV2.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

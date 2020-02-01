@@ -1,19 +1,20 @@
-﻿Imports System.Data.OleDb
-Imports System.Data.SqlClient
-Imports System.IO
-Imports System.Security.Cryptography
-Imports System.Text
-Imports MySql.Data.MySqlClient
+﻿Imports MySql.Data.MySqlClient
 
 Public Class Leiho1_InicioSesion
     Dim datos As New ArrayList
-    Dim server As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
-    'Dim server As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
+    'Dim server As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
+    Dim server As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
     Dim konexion As MySqlConnection
-
 
     Private Sub Leiho1_InicioSesion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         txtBezeroa.Select()
+    End Sub
+
+    Private Sub txtPasahitza_KeyDown(sender As Object, e As KeyEventArgs) Handles txtPasahitza.KeyDown, txtBezeroa.KeyDown
+        Select Case e.KeyData
+            Case Keys.Enter
+                saioaHasi()
+        End Select
     End Sub
 
     Function saioaHasi()
@@ -48,15 +49,21 @@ Public Class Leiho1_InicioSesion
                         Dim ad As New Leiho2_AurkeraAdmin 'bidali  admin lehiora 
                         ad.Show()
                     ElseIf (das1.GetInt32(0) = 2) Then 'ostatu administratzaileak
-                        Me.Hide()
-                        Dim un As New Leiho2_AukeraBezeroNormala 'bidali erabiltzale normalaren lehiora
-                        un.Show()
+                        'Me.Hide()
+                        'Dim un As New AukeraBezeroNormalaV2 'bidali erabiltzale normalaren lehiora
+                        'un.Show()
+                        lblErrorea2.Visible = True
+                        lblErrorea.Visible = False
                     ElseIf (das1.GetInt32(0) = 1) Then 'gonbidatuak
-                        MsgBox("Baimena gonbidatuak, ezin zara sartu")
+                        lblErrorea.Text = "Ezin zara sartu"
+                        lblErrorea.Visible = True
+                        lblErrorea2.Visible = False
                     End If
                 End While
             Else
+                lblErrorea.Text = "NAN-a edo pasahitza txarto"
                 lblErrorea.Visible = True
+                lblErrorea2.Visible = False
             End If
 
         Catch ex As Exception
@@ -109,12 +116,4 @@ Public Class Leiho1_InicioSesion
         Catch ex As Exception
         End Try
     End Function
-
-    Private Sub txtPasahitza_KeyDown(sender As Object, e As KeyEventArgs) Handles txtPasahitza.KeyDown, txtBezeroa.KeyDown
-        Select Case e.KeyData
-            Case Keys.Enter
-                saioaHasi()
-        End Select
-    End Sub
-
 End Class

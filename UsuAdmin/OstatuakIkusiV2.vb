@@ -1,14 +1,14 @@
 ﻿Imports MySql.Data.MySqlClient
 
-Public Class Leiho3_OstatuakIkusiN
+Public Class OstatuakIkusiV2
 
     Dim dr As MySqlDataReader
     Dim komando As New MySqlCommand
     Dim adapter As New MySqlDataAdapter
     Dim data As New DataSet
     Dim cnn1 As MySqlConnection
-    'Dim direccion As String = "server=localhost;user=root;database=datubasea;port=3306;"
-    Dim direccion As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
+    Dim server As String = "server=localhost;user=root;database=datubasea;port=3306;"
+    'Dim server As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
 
 
 
@@ -25,7 +25,7 @@ Public Class Leiho3_OstatuakIkusiN
     Private Sub TaulaAtera()
 
         Try
-            cnn1 = New MySqlConnection(direccion)
+            cnn1 = New MySqlConnection(server)
 
             Dim SQL As String = "SELECT  `ID_SIGNATURA`, `OSTATU_IZENA`, `DESKRIBAPENA`, `OSTATU_HELBIDEA`, `MARKA`, `OSTATU_EMAIL`, `OSTATU_TELEFONOA`, `PERTSONA_TOT`, `LATITUDE`, `LONGITUDE`, `MOTA`, `WEB_URL`, `ADISKIDETSU_URL`, `ZIP_URL`, `POSTA_KODEA`, `HERRI_KODEA` FROM ostatuak"
 
@@ -98,13 +98,13 @@ Public Class Leiho3_OstatuakIkusiN
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
-        Dim er As New Erreserba
+        Dim er As New ErreserbaV2
         er.Show()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Hide()
-        Dim bukatu As New Leiho2_AukeraBezeroNormala
+        Dim bukatu As New AukeraBezeroNormalaV2
         bukatu.Show()
     End Sub
 
@@ -128,7 +128,7 @@ Public Class Leiho3_OstatuakIkusiN
     Private Sub Actualizar(ByRef mota)
 
         Try
-            cnn1 = New MySqlConnection(direccion)
+            cnn1 = New MySqlConnection(server)
 
 
 

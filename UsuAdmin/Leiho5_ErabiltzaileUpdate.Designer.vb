@@ -33,6 +33,7 @@ Partial Class Leiho5_ErabiltzaileUpdate
         Me.btnGorde = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lblErrorea = New System.Windows.Forms.Label()
         Me.cbBaimena = New System.Windows.Forms.ComboBox()
         Me.nan = New System.Windows.Forms.Label()
         Me.telefono = New System.Windows.Forms.TextBox()
@@ -54,7 +55,7 @@ Partial Class Leiho5_ErabiltzaileUpdate
         '
         Me.lblIzena.AutoSize = True
         Me.lblIzena.Font = New System.Drawing.Font("Times New Roman", 12.0!)
-        Me.lblIzena.Location = New System.Drawing.Point(57, 65)
+        Me.lblIzena.Location = New System.Drawing.Point(57, 58)
         Me.lblIzena.Name = "lblIzena"
         Me.lblIzena.Size = New System.Drawing.Size(44, 19)
         Me.lblIzena.TabIndex = 1
@@ -64,7 +65,7 @@ Partial Class Leiho5_ErabiltzaileUpdate
         '
         Me.lblAbizena.AutoSize = True
         Me.lblAbizena.Font = New System.Drawing.Font("Times New Roman", 12.0!)
-        Me.lblAbizena.Location = New System.Drawing.Point(40, 112)
+        Me.lblAbizena.Location = New System.Drawing.Point(40, 105)
         Me.lblAbizena.Name = "lblAbizena"
         Me.lblAbizena.Size = New System.Drawing.Size(61, 19)
         Me.lblAbizena.TabIndex = 3
@@ -74,7 +75,7 @@ Partial Class Leiho5_ErabiltzaileUpdate
         '
         Me.lblBaimena.AutoSize = True
         Me.lblBaimena.Font = New System.Drawing.Font("Times New Roman", 12.0!)
-        Me.lblBaimena.Location = New System.Drawing.Point(40, 160)
+        Me.lblBaimena.Location = New System.Drawing.Point(40, 153)
         Me.lblBaimena.Name = "lblBaimena"
         Me.lblBaimena.Size = New System.Drawing.Size(64, 19)
         Me.lblBaimena.TabIndex = 4
@@ -84,7 +85,7 @@ Partial Class Leiho5_ErabiltzaileUpdate
         '
         Me.lblEmail.AutoSize = True
         Me.lblEmail.Font = New System.Drawing.Font("Times New Roman", 12.0!)
-        Me.lblEmail.Location = New System.Drawing.Point(55, 207)
+        Me.lblEmail.Location = New System.Drawing.Point(55, 200)
         Me.lblEmail.Name = "lblEmail"
         Me.lblEmail.Size = New System.Drawing.Size(45, 19)
         Me.lblEmail.TabIndex = 5
@@ -94,7 +95,7 @@ Partial Class Leiho5_ErabiltzaileUpdate
         '
         Me.lblTelefonoa.AutoSize = True
         Me.lblTelefonoa.Font = New System.Drawing.Font("Times New Roman", 12.0!)
-        Me.lblTelefonoa.Location = New System.Drawing.Point(34, 256)
+        Me.lblTelefonoa.Location = New System.Drawing.Point(34, 249)
         Me.lblTelefonoa.Name = "lblTelefonoa"
         Me.lblTelefonoa.Size = New System.Drawing.Size(71, 19)
         Me.lblTelefonoa.TabIndex = 6
@@ -103,7 +104,7 @@ Partial Class Leiho5_ErabiltzaileUpdate
         'abizena
         '
         Me.abizena.Font = New System.Drawing.Font("Times New Roman", 12.0!)
-        Me.abizena.Location = New System.Drawing.Point(106, 109)
+        Me.abizena.Location = New System.Drawing.Point(106, 102)
         Me.abizena.MaxLength = 50
         Me.abizena.Name = "abizena"
         Me.abizena.Size = New System.Drawing.Size(271, 26)
@@ -112,7 +113,7 @@ Partial Class Leiho5_ErabiltzaileUpdate
         'izena
         '
         Me.izena.Font = New System.Drawing.Font("Times New Roman", 12.0!)
-        Me.izena.Location = New System.Drawing.Point(106, 62)
+        Me.izena.Location = New System.Drawing.Point(106, 55)
         Me.izena.MaxLength = 50
         Me.izena.Name = "izena"
         Me.izena.Size = New System.Drawing.Size(271, 26)
@@ -122,7 +123,7 @@ Partial Class Leiho5_ErabiltzaileUpdate
         '
         Me.btnGorde.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(239, Byte), Integer))
         Me.btnGorde.Font = New System.Drawing.Font("Times New Roman", 12.0!)
-        Me.btnGorde.Location = New System.Drawing.Point(143, 294)
+        Me.btnGorde.Location = New System.Drawing.Point(143, 300)
         Me.btnGorde.Name = "btnGorde"
         Me.btnGorde.Size = New System.Drawing.Size(138, 35)
         Me.btnGorde.TabIndex = 12
@@ -144,6 +145,7 @@ Partial Class Leiho5_ErabiltzaileUpdate
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(107, Byte), Integer), CType(CType(177, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.lblErrorea)
         Me.Panel1.Controls.Add(Me.cbBaimena)
         Me.Panel1.Controls.Add(Me.nan)
         Me.Panel1.Controls.Add(Me.lblNan)
@@ -162,13 +164,25 @@ Partial Class Leiho5_ErabiltzaileUpdate
         Me.Panel1.Size = New System.Drawing.Size(393, 342)
         Me.Panel1.TabIndex = 14
         '
+        'lblErrorea
+        '
+        Me.lblErrorea.AutoSize = True
+        Me.lblErrorea.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblErrorea.ForeColor = System.Drawing.Color.Red
+        Me.lblErrorea.Location = New System.Drawing.Point(171, 276)
+        Me.lblErrorea.Name = "lblErrorea"
+        Me.lblErrorea.Size = New System.Drawing.Size(73, 22)
+        Me.lblErrorea.TabIndex = 86
+        Me.lblErrorea.Text = "Kontuz!"
+        Me.lblErrorea.Visible = False
+        '
         'cbBaimena
         '
         Me.cbBaimena.DisplayMember = "67"
         Me.cbBaimena.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.cbBaimena.FormattingEnabled = True
         Me.cbBaimena.Items.AddRange(New Object() {"Bezero normala", "Administratzailea", "Gonbidatua"})
-        Me.cbBaimena.Location = New System.Drawing.Point(106, 156)
+        Me.cbBaimena.Location = New System.Drawing.Point(106, 149)
         Me.cbBaimena.Name = "cbBaimena"
         Me.cbBaimena.Size = New System.Drawing.Size(271, 23)
         Me.cbBaimena.TabIndex = 85
@@ -186,7 +200,7 @@ Partial Class Leiho5_ErabiltzaileUpdate
         'telefono
         '
         Me.telefono.Font = New System.Drawing.Font("Times New Roman", 12.0!)
-        Me.telefono.Location = New System.Drawing.Point(106, 253)
+        Me.telefono.Location = New System.Drawing.Point(106, 246)
         Me.telefono.MaxLength = 9
         Me.telefono.Name = "telefono"
         Me.telefono.Size = New System.Drawing.Size(271, 26)
@@ -195,7 +209,7 @@ Partial Class Leiho5_ErabiltzaileUpdate
         'email
         '
         Me.email.Font = New System.Drawing.Font("Times New Roman", 12.0!)
-        Me.email.Location = New System.Drawing.Point(106, 204)
+        Me.email.Location = New System.Drawing.Point(106, 197)
         Me.email.MaxLength = 50
         Me.email.Name = "email"
         Me.email.Size = New System.Drawing.Size(271, 26)
@@ -211,7 +225,7 @@ Partial Class Leiho5_ErabiltzaileUpdate
         Me.Controls.Add(Me.Button2)
         Me.MaximizeBox = False
         Me.Name = "Leiho5_ErabiltzaileUpdate"
-        Me.Text = "OstatuAgrad - Erabiltzaile aldaketa"
+        Me.Text = "OstatuAgrad - Administratzailea - Erabiltzaile aldaketa"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
@@ -233,4 +247,5 @@ Partial Class Leiho5_ErabiltzaileUpdate
     Friend WithEvents email As TextBox
     Friend WithEvents nan As Label
     Friend WithEvents cbBaimena As ComboBox
+    Friend WithEvents lblErrorea As Label
 End Class

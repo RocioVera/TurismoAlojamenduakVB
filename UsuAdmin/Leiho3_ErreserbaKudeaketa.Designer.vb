@@ -98,7 +98,7 @@ Partial Class Leiho3_ErreserbaKudeaketa
         Me.Controls.Add(Me.btnEzabatu)
         Me.MaximizeBox = False
         Me.Name = "Leiho3_ErreserbaKudeaketa"
-        Me.Text = "OstatuAgrad - Erreserba kudeaketa"
+        Me.Text = "OstatuAgrad - Administratzailea  - Erreserba kudeaketa"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

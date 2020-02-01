@@ -209,20 +209,16 @@ G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\Renc
 G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\MySql.Data.xml
 G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.vbprojAssemblyReference.cache
 G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho2_AurkeraAdmin.resources
-G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.ErabiltzaileakIkusiN.resources
 G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho4_ErabiltzaileInsert.resources
 G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho3_ErabiltzaileKudeaketa.resources
-G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Erreserba.resources
 G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho3_ErreserbaKudeaketa.resources
 G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho5_ErreserbaUpdate.resources
 G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho1_InicioSesion.resources
 G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Resources.resources
-G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho3_OstatuakIkusiN.resources
 G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho4_OstatuInsert.resources
 G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho3_OstatuKudeaketa.resources
 G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho5_ErabiltzaileUpdate.resources
 G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho5_OstatuUpdate.resources
-G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.Leiho2_AukeraBezeroNormala.resources
 G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.vbproj.GenerateResource.cache
 G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.vbproj.CopyComplete
 G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.exe
@@ -257,3 +253,8 @@ C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuA
 C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.exe
 C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.xml
 C:\Users\gorka\OneDrive\Escritorio\VB-WORK\codigo 5.0\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.pdb
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\bin\Debug\MySql.Data.dll
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.ErabiltzaileakIkusiEZ.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.ErreserbaV2.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.OstatuakIkusiV2.resources
+G:\DAM2\Ethazi\AzkenengoEthazia\VB\TurismoAlojamenduakVB\UsuAdmin\obj\Debug\UsuAdmin.AukeraBezeroNormalaV2.resources

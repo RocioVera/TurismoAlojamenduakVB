@@ -7,8 +7,8 @@ Public Class Leiho3_ErabiltzaileKudeaketa
     Dim adapter As New MySqlDataAdapter
     Dim data As New DataSet
     Dim cnn1 As MySqlConnection
-    'Dim direccion As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
-    Dim direccion As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
+    Dim server As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
+    'Dim server As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
     Dim pass As String = "encriptado"
     Dim lista As New ArrayList
     Public hautatutakoBezeroa As Bezeroa
@@ -33,7 +33,7 @@ Public Class Leiho3_ErabiltzaileKudeaketa
     'metodo para cargar los datos en el textview 
     Private Sub TaulaAtera()
         Try
-            cnn1 = New MySqlConnection(direccion)
+            cnn1 = New MySqlConnection(server)
             Dim SQL As String = "SELECT NAN , ERABIL_IZENA , ABIZENAK , BAIMENA , ERABIL_EMAIL , ERABIL_TELEFONO FROM erabiltzaileak"
             komando.Connection = cnn1
             komando.CommandText = SQL
@@ -78,7 +78,7 @@ Public Class Leiho3_ErabiltzaileKudeaketa
         Try
             Dim nan = ListView1.SelectedItems(0).SubItems(0).Text
             Dim nan_E = AES_Encrypt(nan, pass)
-            cnn1 = New MySqlConnection(direccion)
+            cnn1 = New MySqlConnection(server)
             Dim SQL2 As New MySqlCommand("DELETE FROM erabiltzaileak WHERE NAN = '" & nan_E & "'", cnn1)
             'importante para la conexion y ejecutar las sentencias sql
             komando.Connection = cnn1
@@ -188,5 +188,16 @@ Public Class Leiho3_ErabiltzaileKudeaketa
 
     Private Sub ListView1_DoubleClick(sender As Object, e As EventArgs) Handles ListView1.DoubleClick
         bestePantaila()
+    End Sub
+
+    Private Sub Leiho3_ErabiltzaileKudeaketa_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown, ListView1.KeyDown
+        Select Case e.KeyData
+            Case Keys.Enter
+                bestePantaila()
+            Case Keys.Escape
+                Me.Hide()
+                Dim f1 As New Leiho2_AurkeraAdmin
+                f1.Show()
+        End Select
     End Sub
 End Class

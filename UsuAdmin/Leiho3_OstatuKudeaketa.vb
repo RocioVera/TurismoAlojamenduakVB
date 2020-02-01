@@ -7,8 +7,8 @@ Public Class Leiho3_OstatuKudeaketa
     Dim adapter As New MySqlDataAdapter
     Dim data As New DataSet
     Dim cnn1 As MySqlConnection
-    '  Dim direccion As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
-    Dim server As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
+    Dim server As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
+    'Dim server As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
     Dim hautatutakoOstatua As Ostatuak
 
 
@@ -24,7 +24,7 @@ Public Class Leiho3_OstatuKudeaketa
 
     Private Sub TaulaAtera()
         Try
-            cnn1 = New MySqlConnection(direccion)
+            cnn1 = New MySqlConnection(server)
 
             Dim SQL As String = "SELECT * FROM ostatuak"
 
@@ -93,16 +93,14 @@ Public Class Leiho3_OstatuKudeaketa
 
     'boton para regresar a la aukera
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnAtzera.Click
-        Me.Hide()
-        Dim f1 As New Leiho2_AurkeraAdmin
-        f1.Show()
+        atzera()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnEzabatu.Click
         Try
             Dim id = ListView1.SelectedItems(0).SubItems(0).Text
 
-            cnn1 = New MySqlConnection(direccion)
+            cnn1 = New MySqlConnection(server)
             Dim SQL2 As New MySqlCommand("DELETE FROM ostatuak  WHERE ID_SIGNATURA = '" & id & "'", cnn1)
 
             'importante para la conexion y ejecutar las sentencias sql
@@ -177,4 +175,20 @@ Public Class Leiho3_OstatuKudeaketa
     Private Sub ListView1_DoubleClick_1(sender As Object, e As EventArgs) Handles ListView1.DoubleClick
         aldatuPantaila()
     End Sub
+
+    Private Sub Leiho3_OstatuKudeaketa_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown, ListView1.KeyDown
+        Select Case e.KeyData
+            Case Keys.Enter
+                aldatuPantaila()
+            Case Keys.Escape
+                atzera()
+        End Select
+    End Sub
+
+    Private Sub atzera()
+        Me.Hide()
+        Dim f1 As New Leiho2_AurkeraAdmin
+        f1.Show()
+    End Sub
+
 End Class

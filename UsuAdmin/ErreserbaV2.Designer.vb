@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Erreserba
+Partial Class ErreserbaV2
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -160,7 +160,7 @@ Partial Class Erreserba
         Me.TextBox3.Size = New System.Drawing.Size(219, 20)
         Me.TextBox3.TabIndex = 14
         '
-        'Erreserba
+        'ErreserbaEZ
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -180,7 +180,7 @@ Partial Class Erreserba
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
         Me.MaximizeBox = False
-        Me.Name = "Erreserba"
+        Me.Name = "ErreserbaEZ"
         Me.Text = "OstatuAgrad - Erreserba"
         Me.ResumeLayout(False)
         Me.PerformLayout()

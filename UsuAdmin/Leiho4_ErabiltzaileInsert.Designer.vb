@@ -233,7 +233,7 @@ Partial Class Leiho4_ErabiltzaileInsert
         Me.Controls.Add(Me.Button1)
         Me.MaximizeBox = False
         Me.Name = "Leiho4_ErabiltzaileInsert"
-        Me.Text = "OstatuAgrad - Erabiltzailea gehitu"
+        Me.Text = "OstatuAgrad - Administratzailea  - Erabiltzailea gehitu"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)

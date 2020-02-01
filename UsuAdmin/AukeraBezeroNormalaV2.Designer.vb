@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Leiho2_AukeraBezeroNormala
+Partial Class AukeraBezeroNormalaV2
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -90,7 +90,7 @@ Partial Class Leiho2_AukeraBezeroNormala
         Me.Controls.Add(Me.Panel1)
         Me.MaximizeBox = False
         Me.Name = "Leiho2_AukeraBezeroNormala"
-        Me.Text = "OstatuAgrad"
+        Me.Text = "OstatuAgrad - Bezeroa"
         Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 

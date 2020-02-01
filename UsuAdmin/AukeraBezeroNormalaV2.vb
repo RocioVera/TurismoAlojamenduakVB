@@ -1,13 +1,13 @@
-﻿Public Class Leiho2_AukeraBezeroNormala
+﻿Public Class AukeraBezeroNormalaV2
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnOstatuakIkusi.Click
         Me.Hide()
-        Dim f1 As New Leiho3_OstatuakIkusiN
+        Dim f1 As New OstatuakIkusiV2
         f1.Show()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnErabiltzaileakIkusi.Click
         Me.Hide()
-        Dim f1 As New ErabiltzaileakIkusiN
+        Dim f1 As New ErabiltzaileakIkusiEZ
         f1.Show()
     End Sub
 

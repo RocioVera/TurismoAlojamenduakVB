@@ -1,13 +1,13 @@
 ﻿Imports MySql.Data.MySqlClient
 
-Public Class Erreserba
+Public Class ErreserbaV2
     Dim lista As New ArrayList
     Dim dr As MySqlDataReader
     Dim komando As New MySqlCommand
     Dim adapter As New MySqlDataAdapter
     Dim data As New DataSet
     Dim cnn1 As MySqlConnection
-    Dim direccion As String = "server=localhost;user=root;database=datubasea;port=3306;"
+    Dim server As String = "server=localhost;user=root;database=datubasea;port=3306;"
 
     Private Sub Erreserba_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         geter() 'llamamos al metodo para que se cargue el dni automaticamente
@@ -31,7 +31,7 @@ Public Class Erreserba
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
-        Dim cancel As New Leiho3_OstatuakIkusiN
+        Dim cancel As New OstatuakIkusiV2
         cancel.Show()
 
     End Sub
@@ -64,7 +64,7 @@ Public Class Erreserba
 
         Try
 
-            cnn1 = New MySqlConnection(direccion)
+            cnn1 = New MySqlConnection(server)
 
             Dim SQL As New MySqlCommand
             SQL = "SELECT ID_SIGNATURA FROM ostatuak WHERE OSTATU_IZENA = '" & ostatuIzena & "'"

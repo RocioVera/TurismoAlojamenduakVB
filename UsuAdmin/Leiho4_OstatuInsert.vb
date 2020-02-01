@@ -5,8 +5,8 @@ Public Class Leiho4_OstatuInsert
     Dim komando As New MySqlCommand
     Dim data As New DataSet
     Dim cnn1 As MySqlConnection
-    ' Dim server As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
-    Dim server As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
+    Dim server As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
+    'Dim server As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
     Dim v_signatura As String
     Private Sub Leiho4_OstatuInsert_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         HerriKodeGuztiakKargatu()
@@ -14,6 +14,10 @@ Public Class Leiho4_OstatuInsert
     End Sub
 
     Private Sub btnGehitu_Click(sender As Object, e As EventArgs) Handles btnGehitu.Click
+        insert()
+    End Sub
+
+    Private Sub insert()
         'LAS VARIABLES A USAR
         Try
             cnn1.Open()
@@ -36,10 +40,12 @@ Public Class Leiho4_OstatuInsert
         Finally
             cnn1.Close()
         End Try
-
+    End Sub
+    Private Sub btnEzeztatu_Click(sender As Object, e As EventArgs) Handles btnEzeztatu.Click
+        atzera()
     End Sub
 
-    Private Sub btnEzeztatu_Click(sender As Object, e As EventArgs) Handles btnEzeztatu.Click
+    Private Sub atzera()
         Me.Hide()
         Dim f1 As New Leiho3_OstatuKudeaketa
         f1.Show()
@@ -216,9 +222,12 @@ Public Class Leiho4_OstatuInsert
         HerriDropDownGehitu(sql)
     End Sub
 
-    Private Sub KeyUp(sender As Object, e As KeyEventArgs) Handles cbProbintzia.KeyUp, cbPostaKodea.KeyUp, cbHerriKodea.KeyUp, cbHerria.KeyUp
-        cbProbintzia.Text = ""
+    Private Sub signatura_KeyDown(sender As Object, e As KeyEventArgs) Handles zipurl.KeyDown, weburl.KeyDown, telefonoa.KeyDown, signatura.KeyDown, pertsonatot.KeyDown, MyBase.KeyDown, mota.KeyDown, marka.KeyDown, longitudea.KeyDown, latitudea.KeyDown, izena.KeyDown, helbidea.KeyDown, email.KeyDown, deskribapena.KeyDown, cbProbintzia.KeyDown, cbPostaKodea.KeyDown, cbHerriKodea.KeyDown, cbHerria.KeyDown, adiskidetsuurl.KeyDown
+        Select Case e.KeyData
+            Case Keys.Enter
+                insert()
+            Case Keys.Escape
+                atzera()
+        End Select
     End Sub
-
-
 End Class

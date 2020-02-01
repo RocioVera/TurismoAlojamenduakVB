@@ -3,13 +3,17 @@
 Public Class Leiho5_ErreserbaUpdate
     Dim komando As New MySqlCommand
     Dim cnn1 As MySqlConnection
-    ' Dim direccion As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
-    Dim server As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
+    Dim server As String = "server=localhost;user=root;database=3262035_ostatuagrad;port=3306;"
+    'Dim server As String = "server=192.168.13.15;user=root;database=3262035_ostatuagrad;port=3306;"
     Dim ek As New Leiho3_ErreserbaKudeaketa
     Dim v_id_erreserba As Integer
     Dim hautatutakoErreserba As Erreserbak
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        updatear()
+    End Sub
+
+    Public Sub updatear()
         Dim v_dataamaiera As String = amaieradata.SelectionEnd.ToShortDateString
         Dim v_datahasieras As String = hasieradata.SelectionEnd.ToShortDateString
         Dim v_preziotot As Integer = prezioa.Text
@@ -17,7 +21,7 @@ Public Class Leiho5_ErreserbaUpdate
 
         'update sentencia
         Try
-            cnn1 = New MySqlConnection(direccion)
+            cnn1 = New MySqlConnection(server)
             Dim sql As String = "UPDATE erreserbak set DATA_AMAIERA = '" & v_dataamaiera & "' , DATA_HASIERA =  '" & v_datahasieras & "' , ERRESERBA_PREZIO_TOT =" & v_preziotot & " , PERTSONA_KANT_ERRES =" & v_pertsonakant & "  WHERE ID_ERRESERBA = " & hautatutakoErreserba.IdErreserba & ""
             Dim SQL2 As New MySqlCommand(sql, cnn1)
             'importante para la conexion y ejecutar las sentencias sql
@@ -31,6 +35,7 @@ Public Class Leiho5_ErreserbaUpdate
             MsgBox(ex.Message) 'para sacar los fallos de la update 
         End Try
     End Sub
+
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Hide()
@@ -53,4 +58,15 @@ Public Class Leiho5_ErreserbaUpdate
         Dim erreserbaPrezioa As Double = CInt(Int((Rnd() * 300.0) + 80.0)) * p_cant.Value
         prezioa.Text = erreserbaPrezioa
     End Sub
+
+    Private Sub Leiho5_ErreserbaUpdate_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown, p_cant.KeyDown, hasieradata.KeyDown, amaieradata.KeyDown
+        Select Case e.KeyData
+            Case Keys.Enter
+                updatear()
+            Case Keys.Escape
+                Me.Hide()
+                ek.Show()
+        End Select
+    End Sub
+
 End Class

@@ -107,7 +107,7 @@ Partial Class Leiho2_AurkeraAdmin
         Me.Controls.Add(Me.Button3)
         Me.MaximizeBox = False
         Me.Name = "Leiho2_AurkeraAdmin"
-        Me.Text = "OstatuAgrad"
+        Me.Text = "OstatuAgrad - Administratzailea"
         Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
